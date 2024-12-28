@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Street.Healing.API.props" />
+</Project>
