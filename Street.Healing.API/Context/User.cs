@@ -17,6 +17,13 @@
         /// </summary>
         public required string LastName { get; set; }
 
+
+
+        /// <summary>
+        /// User's phone Number
+        /// </summary>
+        public required string PhoneNumber { get; set; }
+
         /// <summary>
         /// User's email
         /// </summary>

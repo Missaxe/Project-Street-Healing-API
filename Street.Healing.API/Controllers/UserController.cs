@@ -93,17 +93,19 @@ namespace Street.Healing.API.Controllers
             return Ok(new
             {
                 Status = 200,
-                Message = "User Added!"
+                Message = "User Added!",
+                Id = userObject.Id
             });
         }
 
         [HttpPost("sendToken")]
-        public async Task<IActionResult> SendToken([FromBody] User userObj)
+        public async Task<IActionResult> SendToken([FromBody] int id)
         {
-            if (userObj == null)
-                return BadRequest(new { Message = "No Data to be sent" });
-            //var message = new Message(new string[] { userObj.Email! }, "OTP Confrimation", userObj.Token);
-            //await _emailServices.SendEmailAsync(message);
+  
+            string email = _userServices.GetUserEmailbyIdAsync(id);
+            string token = _emailServices.CreateJwt();
+            var message = new Message(new string[] { email! }, "OTP Confrimation", token);
+            await _emailServices.SendEmailAsync(message);
             return Ok(new
             {
                 Status = 200,

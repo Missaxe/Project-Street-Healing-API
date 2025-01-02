@@ -40,8 +40,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userObj",
-        "Type": "Street.Healing.API.Context.User",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

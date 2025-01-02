@@ -161,3 +161,4 @@ C:\Users\hp\source\repos\Street.Healing.API\Street.Healing.API\obj\Debug\net9.0\
 C:\Users\hp\source\repos\Street.Healing.API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.genruntimeconfig.cache
 C:\Users\hp\source\repos\Street.Healing.API\Street.Healing.API\obj\Debug\net9.0\ref\Street.Healing.API.dll
 C:\Users\hp\source\repos\Street.Healing.API\Street.Healing.API\bin\Debug\net9.0\AutoMapper.dll
+C:\Users\hp\source\repos\Street.Healing.API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.sourcelink.json

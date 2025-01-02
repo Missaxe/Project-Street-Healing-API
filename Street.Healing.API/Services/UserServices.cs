@@ -36,6 +36,18 @@ namespace Street.Healing.API.Services
 
            => _userContext.Users.FirstOrDefaultAsync(x => x.Email == userEmail);
 
+        /// <summary>
+        /// Get matching user email from db based on Id
+        /// </summary>
+        /// <param name="userObj"></param>
+        /// <returns></returns>
+        public  string GetUserEmailbyIdAsync(int id)
+      
+           =>  _userContext.Users.Where(x => x.Id == id).Select( x => x.Email).First();
+     
+
+         
+
 
         /// <summary>
         /// Check if the email already exist 

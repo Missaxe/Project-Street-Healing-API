@@ -11,5 +11,7 @@ namespace Street.Healing.API.Services
         public Task<bool> CheckEmailExistAsync(string email);
 
         public Task<bool> CheckUsernameExistAsync(string firstName, string lastName);
+
+        public string GetUserEmailbyIdAsync(int id);
     }
 }
