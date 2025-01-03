@@ -4,6 +4,7 @@ using Street.Healing.API.Helpers;
 using Street.Healing.API.RequestsData;
 using Street.Healing.API.Services;
 using System.Collections;
+using static Street.Healing.API.Services.PasswordServices;
 
 namespace Street.Healing.API.Controllers
 {
@@ -12,17 +13,20 @@ namespace Street.Healing.API.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserServices _userServices;
-         private readonly IEmailServices _emailServices;
+        private readonly IEmailServices _emailServices;
         private readonly IPasswordServices _passwordServices;
-        private readonly Dictionary<string, string> _usersoken = new Dictionary<string, string>();
+        private readonly ICache<string,string> _cache;
 
 
-        public UserController(IUserServices userServices, IPasswordServices passwordServices, IEmailServices emailServices)
+
+
+        public UserController(IUserServices userServices, IPasswordServices passwordServices, IEmailServices emailServices, ICache<string, string> cache)
         {
             _userServices = userServices;
             _emailServices = emailServices;
             _passwordServices = passwordServices;
             _emailServices = emailServices;
+            _cache = cache;
         }
 
 
@@ -32,18 +36,18 @@ namespace Street.Healing.API.Controllers
         /// <param name="userObj"></param>
         /// <returns></returns>
         [HttpPost("authenticate")]
-        public async Task<IActionResult> Authenticate([FromBody] User userObj)
+        public async Task<IActionResult> Authenticate([FromBody] UserLogin userObj)
 
         {
             if (userObj == null)
                 return BadRequest();
 
-            var user = await _userServices.GetUserAsync(userObj.Email);
+            var user = await _userServices.GetUserAsync(userObj.emailValue);
 
             if (user == null)
                 return NotFound(new { Message = "User not found!" });
 
-            if (!_passwordServices.VerifyPassword(userObj.Password, user.Password))
+            if (!_passwordServices.VerifyPassword(userObj.passwordValue, user.HashPassword,user.SaltPassword))
             {
                 return BadRequest(new { Message = "Password is Incorrect" });
             }
@@ -79,7 +83,11 @@ namespace Street.Healing.API.Controllers
             if(!string.IsNullOrEmpty(passMessage))
                 return BadRequest(new { Message = passMessage.ToString() });
 
-            userObj.Password = _passwordServices.HashPassword(userObj.Password);
+            HashSalt hashSalt = GenerateSaltedHash(64, userObj.Password);
+
+            //userObj.Password = _passwordServices.HashPassword(userObj.Password);
+            userObj.HashPassword = hashSalt.Hash;
+            userObj.SaltPassword = hashSalt.Salt;
             userObj.IsEmailValid = _emailServices.IsValidEmail(userObj.Email);
             userObj.DateCreated = DateTime.Now;
 
@@ -94,21 +102,29 @@ namespace Street.Healing.API.Controllers
             {
                 Status = 200,
                 Message = "User Added!",
-                Id = userObject.Id
+                userObject.Id
             });
         }
 
-        [HttpPost("sendToken")]
+        /// <summary>
+        /// Send Otp to confirm email
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPost("sendOtp")]
         public async Task<IActionResult> SendToken([FromBody] int id)
         {
-  
+
             string email = _userServices.GetUserEmailbyIdAsync(id);
-            string token = _emailServices.CreateJwt();
-            var message = new Message(new string[] { email! }, "OTP Confrimation", token);
+            string otp = _emailServices.CreateJwt();
+            var message = new Message(new string[] { email! }, "OTP Confrimation", otp);
             await _emailServices.SendEmailAsync(message);
+            _cache.Store(email, otp, TimeSpan.FromMinutes(2));
             return Ok(new
             {
                 Status = 200,
+                id,
+                otp,
                 Message = "Email sent!"
             });
         }

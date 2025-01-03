@@ -11,6 +11,25 @@ namespace Street.Healing.API.Services
         private static readonly int SaltSize = 16;
         private static readonly int HashSize = 20;
         private static readonly int Iterations = 10000;
+        public class HashSalt
+        {
+            public string Hash { get; set; }
+            public string Salt { get; set; }
+        }
+
+        public static HashSalt GenerateSaltedHash(int size, string password)
+        {
+            var saltBytes = new byte[size];
+            var provider = new RNGCryptoServiceProvider();
+            provider.GetNonZeroBytes(saltBytes);
+            var salt = Convert.ToBase64String(saltBytes);
+
+            var rfc2898DeriveBytes = new Rfc2898DeriveBytes(password, saltBytes, 10000);
+            var hashPassword = Convert.ToBase64String(rfc2898DeriveBytes.GetBytes(256));
+
+            HashSalt hashSalt = new HashSalt { Hash = hashPassword, Salt = salt };
+            return hashSalt;
+        }
 
         /// <summary>
         /// Hash the password
@@ -40,23 +59,29 @@ namespace Street.Healing.API.Services
         /// <param name="password"></param>
         /// <param name="base64Hash"></param>
         /// <returns></returns>
-        public bool VerifyPassword(string password, string base64Hash)
+        public  bool VerifyPassword(string enteredPassword, string storedHash, string storedSalt)
         {
-            var hashBytes = Convert.FromBase64String(base64Hash);
-
-            var salt = new byte[SaltSize];
-            Array.Copy(hashBytes, 0, salt, 0, SaltSize);
-
-            var key = new Rfc2898DeriveBytes(password, salt, Iterations);
-            byte[] hash = key.GetBytes(HashSize);
-
-            for (var i = 0; i < HashSize; i++)
-            {
-                if (hashBytes[i + SaltSize] != hash[i])
-                    return false;
-            }
-            return true;
+            var saltBytes = Convert.FromBase64String(storedSalt);
+            var rfc2898DeriveBytes = new Rfc2898DeriveBytes(enteredPassword, saltBytes, 10000);
+            return Convert.ToBase64String(rfc2898DeriveBytes.GetBytes(256)) == storedHash;
         }
+        //public bool VerifyPassword(string password, string base64Hash)
+        //{
+        //    var hashBytes = Convert.FromBase64String(base64Hash);
+
+        //    var salt = new byte[SaltSize];
+        //    Array.Copy(hashBytes, 0, salt, 0, SaltSize);
+
+        //    var key = new Rfc2898DeriveBytes(password, salt, Iterations);
+        //    byte[] hash = key.GetBytes(HashSize);
+
+        //    for (var i = 0; i < HashSize; i++)
+        //    {
+        //        if (hashBytes[i + SaltSize] != hash[i])
+        //            return false;
+        //    }
+        //    return true;
+        //}
 
         /// <summary>
         /// Check if Password respects the norms

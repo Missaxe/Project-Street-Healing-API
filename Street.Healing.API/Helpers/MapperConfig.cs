@@ -17,7 +17,8 @@ namespace Street.Healing.API.Helpers
                 .ForMember(dest => dest.LastName, act => act.MapFrom(src => src.LastName))
                 .ForMember(dest => dest.PhoneNumber, act => act.MapFrom(src => src.PhoneNumber))
                 .ForMember(dest => dest.Email, act => act.MapFrom(src => src.Email))
-                .ForMember(dest => dest.Password, act => act.MapFrom(src => src.Password))
+                .ForMember(dest => dest.HashPassword, act => act.MapFrom(src => src.HashPassword))
+                .ForMember(dest => dest.SaltPassword, act => act.MapFrom(src => src.SaltPassword))
                 .ForMember(dest => dest.DateCreated, act => act.MapFrom(src => src.DateCreated));
             });
 

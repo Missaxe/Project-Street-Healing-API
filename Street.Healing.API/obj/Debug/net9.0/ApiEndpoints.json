@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "userObj",
-        "Type": "Street.Healing.API.Context.User",
+        "Type": "Street.Healing.API.Context.UserLogin",
         "IsRequired": true
       }
     ],
@@ -34,7 +34,7 @@
   {
     "ContainingType": "Street.Healing.API.Controllers.UserController",
     "Method": "SendToken",
-    "RelativePath": "api/User/sendToken",
+    "RelativePath": "api/User/sendOtp",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

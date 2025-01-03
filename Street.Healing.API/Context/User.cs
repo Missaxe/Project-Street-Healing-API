@@ -30,9 +30,14 @@
         public required string Email { get; set; }
 
         /// <summary>
-        /// User's password
+        /// User's hash password
         /// </summary>
-        public required string Password { get; set; }
+        public required string HashPassword { get; set; }
+
+        /// <summary>
+        /// User's salt password
+        /// </summary>
+        public required string SaltPassword { get; set; }
 
 
         /// <summary>

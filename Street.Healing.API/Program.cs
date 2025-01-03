@@ -37,6 +37,7 @@ namespace Street.Healing.API
             builder.Services.AddScoped<IUserServices, UserServices>();
             builder.Services.AddSingleton<IEmailServices, EmailServices>();
             builder.Services.AddScoped<IPasswordServices, PasswordServices>();
+            builder.Services.AddSingleton<ICache<string, string>, Cache<string, string>>();
 
             var app = builder.Build();
 
