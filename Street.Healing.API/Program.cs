@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Serilog;
 using Street.Healing.API.Context;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.Services;
@@ -23,6 +24,10 @@ namespace Street.Healing.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            //logging
+            builder.Host.UseSerilog((context, configuration) =>
+            configuration.ReadFrom.Configuration(context.Configuration));
+
             //Database Configuration
             builder.Services.AddDbContext<UserDbContext>(item =>
             item.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
@@ -37,7 +42,6 @@ namespace Street.Healing.API
             builder.Services.AddScoped<IUserServices, UserServices>();
             builder.Services.AddSingleton<IEmailServices, EmailServices>();
             builder.Services.AddScoped<IPasswordServices, PasswordServices>();
-            builder.Services.AddSingleton<ICache<string, string>, Cache<string, string>>();
 
             var app = builder.Build();
 

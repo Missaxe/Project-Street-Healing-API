@@ -7,8 +7,5 @@ namespace Street.Healing.API.Services
     {
         public Task SendEmailAsync(Message message);
 
-        public string CreateJwt();
-
-        public bool IsValidEmail(string email);
     }
 }

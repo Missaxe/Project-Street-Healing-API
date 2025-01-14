@@ -29,15 +29,6 @@
         /// </summary>
         public required string Password { get; set; }
 
-        /// <summary>
-        /// User's password
-        /// </summary>
-        public required string HashPassword { get; set; }
-
-        /// <summary>
-        /// User's password
-        /// </summary>
-        public required string SaltPassword { get; set; }
 
         /// <summary>
         /// User's password confirmation

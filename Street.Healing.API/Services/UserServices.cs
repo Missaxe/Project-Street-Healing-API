@@ -32,18 +32,18 @@ namespace Street.Healing.API.Services
         /// </summary>
         /// <param name="userObj"></param>
         /// <returns></returns>
-        public Task<User> GetUserAsync(string userEmail)
+        public async Task<User> GetUserAsync(string userEmail)
 
-           => _userContext.Users.FirstOrDefaultAsync(x => x.Email == userEmail);
+           => await _userContext.Users.FirstOrDefaultAsync(x => x.Email == userEmail);
 
         /// <summary>
         /// Get matching user email from db based on Id
         /// </summary>
         /// <param name="userObj"></param>
         /// <returns></returns>
-        public  string GetUserEmailbyIdAsync(int id)
+        public async Task<string> GetUserEmailbyIdAsync(int id)
       
-           =>  _userContext.Users.Where(x => x.Id == id).Select( x => x.Email).First();
+           =>  await _userContext.Users.Where(x => x.Id == id).Select( x => x.Email).FirstAsync();
      
 
          
@@ -54,15 +54,15 @@ namespace Street.Healing.API.Services
         /// </summary>
         /// <param name="email"></param>
         /// <returns></returns>
-        public Task<bool> CheckEmailExistAsync(string email)
-            => _userContext.Users.AnyAsync(x => x.Email == email);
+        public async Task<bool> CheckEmailExistAsync(string email)
+            => await _userContext.Users.AnyAsync(x => x.Email == email);
 
         /// <summary>
         /// check if the username already exist
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>
-        public Task<bool> CheckUsernameExistAsync(string firstName , string lastName)
-            => _userContext.Users.AnyAsync(x => x.FirstName == firstName);
+        public async Task<bool> CheckUsernameExistAsync(string firstName , string lastName)
+            => await _userContext.Users.AnyAsync(x => x.FirstName == firstName);
     }
 }

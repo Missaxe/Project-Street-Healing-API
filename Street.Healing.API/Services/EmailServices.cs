@@ -3,32 +3,32 @@ using MailKit.Net.Smtp;
 using Street.Healing.API.Helpers;
 using System.Security.Cryptography;
 using System.Text;
+using Street.Healing.API.Controllers;
 
 namespace Street.Healing.API.Services
 {
     public class EmailServices : IEmailServices
     {
         private readonly EmailConfiguration _emailConfig;
-        private static readonly char[] chars =
-       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".ToCharArray();
-        public EmailServices(EmailConfiguration emailConfig) => _emailConfig = emailConfig;
+        private readonly ILogger<EmailServices> _logger;
+
+        public EmailServices(EmailConfiguration emailConfig, ILogger<EmailServices> logger)
+        {
+            _emailConfig = emailConfig;
+            _logger = logger;
+        }
+     
         public async Task SendEmailAsync(Message message)
         {
-            var emailMessage = CreateEmailMessage(message);
-            await SendAsync(emailMessage);
+             var emailMessage = CreateEmailMessage(message);
+             await SendAsync(emailMessage);
         }
 
-        private MimeMessage CreateEmailMessage(Message message)
-        {
-            var emailMessage = new MimeMessage();
-            emailMessage.From.Add(new MailboxAddress("email", _emailConfig.From));
-            emailMessage.To.AddRange(message.To);
-            emailMessage.Subject = message.Subject;
-            emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Text) { Text = message.Content };
-
-            return emailMessage;
-        }
-
+        /// <summary>
+        /// Send Email ASYNC
+        /// </summary>
+        /// <param name="mailMessage"></param>
+        /// <returns></returns>
         private async Task SendAsync(MimeMessage mailMessage)
         {
             using var client = new SmtpClient();
@@ -40,10 +40,9 @@ namespace Street.Healing.API.Services
 
                 await client.SendAsync(mailMessage);
             }
-            catch
+            catch (Exception ex)
             {
-                //log an error message or throw an exception or both.
-                throw;
+                _logger.LogError($"Errror during sending OTP email {ex.Message}");
             }
             finally
             {
@@ -52,45 +51,42 @@ namespace Street.Healing.API.Services
             }
         }
 
-        public string CreateJwt()
-        {
-            using (var rng = RandomNumberGenerator.Create())
-            {
-                var bytes = new byte[6];
-                rng.GetBytes(bytes);
-
-                var result = new StringBuilder(6);
-                foreach (var byteValue in bytes)
-                {
-                    result.Append(chars[byteValue % chars.Length]);
-                }
-
-                return result.ToString();
-            }
-        }
-
         /// <summary>
-        /// check if the email's form is valid
+        /// Create Email Content
         /// </summary>
-        /// <param name="email"></param>
+        /// <param name="message"></param>
         /// <returns></returns>
-        public bool IsValidEmail(string email)
+        private MimeMessage CreateEmailMessage(Message message)
         {
-            var trimmedEmail = email.Trim();
+            var emailMessage = new MimeMessage();
+            emailMessage.From.Add(new MailboxAddress("email", _emailConfig.From));
+            emailMessage.To.AddRange(message.To);
+            emailMessage.Subject = message.Subject;
 
-            if (trimmedEmail.EndsWith("."))
+            var bodyBuilder = new BodyBuilder();
+
+            if (message.IsHtml)
             {
-                return false;
+                // If it's HTML, set the HTML body
+                bodyBuilder.HtmlBody = message.Content;
             }
-            try
+            else
             {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == trimmedEmail;
+                // Otherwise, set the plain text body
+                bodyBuilder.TextBody = message.Content;
             }
-            catch
-            {
-                return false;
-            }
+
+            // Set the body once
+            emailMessage.Body = bodyBuilder.ToMessageBody();
+
+            return emailMessage;
         }
+
+
+
+
+
+
+
     }
 }

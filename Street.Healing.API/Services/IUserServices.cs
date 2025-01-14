@@ -4,7 +4,7 @@ namespace Street.Healing.API.Services
 {
     public interface IUserServices
     {
-        public Task AddUserAsync(User userObj);
+        public  Task AddUserAsync(User userObj);
 
         public Task<User> GetUserAsync(string userEmail);
 
@@ -12,6 +12,6 @@ namespace Street.Healing.API.Services
 
         public Task<bool> CheckUsernameExistAsync(string firstName, string lastName);
 
-        public string GetUserEmailbyIdAsync(int id);
+        public Task<string> GetUserEmailbyIdAsync(int id);
     }
 }
