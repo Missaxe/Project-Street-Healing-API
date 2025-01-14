@@ -4,6 +4,6 @@ namespace Street.Healing.API.Services
 {
     public interface ISmsServices
     {
-        public MessageResource SendSms();
+        //public MessageResource SendSms();
     }
 }
