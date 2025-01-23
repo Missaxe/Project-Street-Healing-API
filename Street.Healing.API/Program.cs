@@ -34,13 +34,13 @@ namespace Street.Healing.API
 
             //Add Email Configs
             var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
-            builder.Services.AddSingleton(emailConfig);
+           builder.Services.AddSingleton(emailConfig);
 
 
             //Services Dependency Injection 
 
             builder.Services.AddScoped<IUserServices, UserServices>();
-            builder.Services.AddSingleton<IEmailServices, EmailServices>();
+            builder.Services.AddScoped<IEmailServices, EmailServices>();
             builder.Services.AddScoped<IPasswordServices, PasswordServices>();
 
             var app = builder.Build();

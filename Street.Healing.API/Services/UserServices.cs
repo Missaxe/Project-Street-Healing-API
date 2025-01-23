@@ -43,7 +43,7 @@ namespace Street.Healing.API.Services
         /// <returns></returns>
         public async Task<string> GetUserEmailbyIdAsync(int id)
       
-           =>  await _userContext.Users.Where(x => x.Id == id).Select( x => x.Email).FirstAsync();
+           =>  await _userContext.Users.Where(x => x.Id == id).Select( x => x.Email).FirstOrDefaultAsync();
      
 
          
