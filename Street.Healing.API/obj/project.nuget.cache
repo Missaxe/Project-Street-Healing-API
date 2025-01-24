@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2i12E9WRi+o=",
+  "dgSpecHash": "qsYu4XFioX8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\source\\repos\\Street.Healing.API\\Street.Healing.API\\Street.Healing.API.csproj",
+  "projectFilePath": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Street.Healing.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

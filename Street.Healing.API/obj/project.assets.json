@@ -7220,11 +7220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\source\\repos\\Street.Healing.API\\Street.Healing.API\\Street.Healing.API.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Street.Healing.API.csproj",
       "projectName": "Street.Healing.API",
-      "projectPath": "C:\\Users\\hp\\source\\repos\\Street.Healing.API\\Street.Healing.API\\Street.Healing.API.csproj",
+      "projectPath": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Street.Healing.API.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\source\\repos\\Street.Healing.API\\Street.Healing.API\\obj\\",
+      "outputPath": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
