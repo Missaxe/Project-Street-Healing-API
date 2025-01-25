@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Serilog;
@@ -42,6 +43,7 @@ namespace Street.Healing.API
             builder.Services.AddScoped<IUserServices, UserServices>();
             builder.Services.AddScoped<IEmailServices, EmailServices>();
             builder.Services.AddScoped<IPasswordServices, PasswordServices>();
+            //builder.Services.AddIdentity<IdentityUser,User>();
 
             var app = builder.Build();
 

@@ -1,6 +1,6 @@
-﻿namespace Street.Healing.API.RequestsData
+﻿namespace Street.Healing.API.RequestsDto.User
 {
-    public class UserClient
+    public class UserClientDto
     {
 
         /// <summary>

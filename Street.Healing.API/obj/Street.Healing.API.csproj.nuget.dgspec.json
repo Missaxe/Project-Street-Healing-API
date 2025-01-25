@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.69.0, )"
+            },
             "GoogleAuthenticator": {
               "target": "Package",
               "version": "[3.2.0, )"

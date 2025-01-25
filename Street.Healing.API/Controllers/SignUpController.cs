@@ -3,7 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using Street.Healing.API.Context;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.MailStyling;
-using Street.Healing.API.RequestsData;
+using Street.Healing.API.RequestsDto.User;
 using Street.Healing.API.Services;
 using System.Collections;
 using static Street.Healing.API.Services.PasswordServices;
@@ -25,7 +25,7 @@ namespace Street.Healing.API.Controllers
         /// <param name="userObj"></param>
         /// <returns></returns>
         [HttpPost("register")]
-        public async Task<IActionResult> AddUserAsync([FromBody] UserClient userObj)
+        public async Task<IActionResult> AddUserAsync([FromBody] UserClientDto userObj)
         {
             try
             {

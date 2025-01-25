@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Street.Healing.API.Context;
 using Street.Healing.API.Helpers;
-using Street.Healing.API.RequestsData;
+using Street.Healing.API.RequestsDto.User;
 using Street.Healing.API.Services;
 
 namespace Street.Healing.API.Controllers
@@ -20,7 +20,7 @@ namespace Street.Healing.API.Controllers
         /// <param name="userObj"></param>
         /// <returns></returns>
         [HttpPost("authenticate")]
-        public async Task<IActionResult> Authenticate([FromBody] UserClient userObj)
+        public async Task<IActionResult> Authenticate([FromBody] UserClientDto userObj)
         {
             try
             {

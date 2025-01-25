@@ -10,40 +10,40 @@
         /// <summary>
         /// User's first name
         /// </summary>
-        public required string FirstName { get; set; }
+        public  string FirstName { get; set; }
 
         /// <summary>
         /// User's last name
         /// </summary>
-        public required string LastName { get; set; }
+        public  string LastName { get; set; }
 
 
 
         /// <summary>
         /// User's phone Number
         /// </summary>
-        public required string PhoneNumber { get; set; }
+        public  string PhoneNumber { get; set; }
 
         /// <summary>
         /// User's email
         /// </summary>
-        public required string Email { get; set; }
+        public  string Email { get; set; }
 
         /// <summary>
         /// User's hash password
         /// </summary>
-        public required string HashPassword { get; set; }
+        public  string HashPassword { get; set; }
 
         /// <summary>
         /// User's salt password
         /// </summary>
-        public required string SaltPassword { get; set; }
+        public  string SaltPassword { get; set; }
 
 
         /// <summary>
         /// User's date creation
         /// </summary>
-        public required DateTime DateCreated { get; set; }
+        public  DateTime DateCreated { get; set; }
     }
 }
 

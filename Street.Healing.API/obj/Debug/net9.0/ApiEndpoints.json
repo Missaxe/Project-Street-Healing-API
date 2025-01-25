@@ -1,12 +1,18 @@
 [
   {
     "ContainingType": "Street.Healing.API.Controllers.GoogleSignInController",
-    "Method": "AuthenticateWGoogle",
-    "RelativePath": "api/GoogleSignIn/GoogleAuthenticate",
+    "Method": "ExternalLogin",
+    "RelativePath": "api/GoogleSignIn/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "externalAuth",
+        "Type": "Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -19,7 +25,7 @@
     "Parameters": [
       {
         "Name": "userObj",
-        "Type": "Street.Healing.API.RequestsData.UserClient",
+        "Type": "Street.Healing.API.RequestsDto.User.UserClientDto",
         "IsRequired": true
       }
     ],
@@ -51,7 +57,7 @@
     "Parameters": [
       {
         "Name": "userObj",
-        "Type": "Street.Healing.API.RequestsData.UserClient",
+        "Type": "Street.Healing.API.RequestsDto.User.UserClientDto",
         "IsRequired": true
       }
     ],

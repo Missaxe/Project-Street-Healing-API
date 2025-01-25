@@ -15,6 +15,7 @@ namespace Street.Healing.API.Helpers
         public const string IncorrectPasword = "Password is incorrect. Please try again.";
         public const string EmptyPasword = "Password is empty. Please try again.";
         public const string OtpFailed = "Failed to send OTP email.";
+        public const string GoogleSignInFailed = "Failed to sign in with google.";
 
 
 
