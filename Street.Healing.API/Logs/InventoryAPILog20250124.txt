@@ -55,3 +55,18 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
 2025-01-24 17:48:58.661 +01:00 [INF] Executed action Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API) in 2681.1551ms
 2025-01-24 17:48:58.667 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
 2025-01-24 17:48:58.707 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/signup/register - 200 null application/json; charset=utf-8 2788.9254ms
+2025-01-24 20:09:05.097 +01:00 [INF] Now listening on: https://localhost:7066
+2025-01-24 20:09:05.145 +01:00 [INF] Now listening on: http://localhost:5050
+2025-01-24 20:09:05.198 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-24 20:09:05.200 +01:00 [INF] Hosting environment: Development
+2025-01-24 20:09:05.202 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-01-24 20:09:18.833 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - null null
+2025-01-24 20:09:19.203 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - 200 null text/html;charset=utf-8 376.0141ms
+2025-01-24 20:09:19.277 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-24 20:09:19.277 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.js - null null
+2025-01-24 20:09:19.277 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_vs/browserLink - null null
+2025-01-24 20:09:19.306 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 29.5953ms
+2025-01-24 20:09:19.308 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.js - 200 null application/javascript;charset=utf-8 30.9803ms
+2025-01-24 20:09:19.380 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.5634ms
+2025-01-24 20:09:19.705 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - null null
+2025-01-24 20:09:19.859 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 153.611ms
