@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -141,10 +145,6 @@
             "Twilio": {
               "target": "Package",
               "version": "[7.8.0, )"
-            },
-            "Twilio.AspNet.Mvc": {
-              "target": "Package",
-              "version": "[8.1.1, )"
             }
           },
           "imports": [

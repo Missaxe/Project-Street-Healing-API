@@ -12,6 +12,7 @@
           "Google.Apis.Auth": "1.69.0",
           "GoogleAuthenticator": "3.2.0",
           "Microsoft.AspNetCore.Authentication.Google": "9.0.1",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
@@ -29,8 +30,7 @@
           "Swashbuckle.AspNetCore.SwaggerGen": "7.2.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "7.2.0",
           "System.Threading.Tasks": "4.3.0",
-          "Twilio": "7.8.0",
-          "Twilio.AspNet.Mvc": "8.1.1"
+          "Twilio": "7.8.0"
         },
         "runtime": {
           "Street.Healing.API.dll": {}
@@ -155,55 +155,29 @@
           }
         }
       },
-      "Microsoft.AspNet.Mvc/5.3.0": {
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "3.3.0",
-          "Microsoft.AspNet.WebPages": "3.3.0"
-        },
-        "runtime": {
-          "lib/net45/System.Web.Mvc.dll": {
-            "assemblyVersion": "5.3.0.0",
-            "fileVersion": "5.3.61130.707"
-          }
-        }
-      },
-      "Microsoft.AspNet.Razor/3.3.0": {
-        "runtime": {
-          "lib/net45/System.Web.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61130.707"
-          }
-        }
-      },
-      "Microsoft.AspNet.WebPages/3.3.0": {
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "3.3.0",
-          "Microsoft.Web.Infrastructure": "1.0.0"
-        },
-        "runtime": {
-          "lib/net45/System.Web.Helpers.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61130.707"
-          },
-          "lib/net45/System.Web.WebPages.Deployment.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61130.707"
-          },
-          "lib/net45/System.Web.WebPages.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61130.707"
-          },
-          "lib/net45/System.Web.WebPages.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.61130.707"
-          }
-        }
-      },
       "Microsoft.AspNetCore.Authentication.Google/9.0.1": {
         "runtime": {
           "lib/net9.0/Microsoft.AspNetCore.Authentication.Google.dll": {
             "assemblyVersion": "9.0.1.0",
             "fileVersion": "9.0.124.61009"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.Internal/9.0.0": {},
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/9.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.Internal": "9.0.0"
+        }
+      },
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "Microsoft.Extensions.Identity.Stores": "9.0.0"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.52903"
           }
         }
       },
@@ -716,6 +690,20 @@
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0"
         }
       },
+      "Microsoft.Extensions.Identity.Core/9.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "9.0.0",
+          "Microsoft.Extensions.Logging": "9.0.0",
+          "Microsoft.Extensions.Options": "9.0.0"
+        }
+      },
+      "Microsoft.Extensions.Identity.Stores/9.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "9.0.0",
+          "Microsoft.Extensions.Identity.Core": "9.0.0",
+          "Microsoft.Extensions.Logging": "9.0.0"
+        }
+      },
       "Microsoft.Extensions.Logging/9.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "9.0.0",
@@ -844,14 +832,6 @@
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Microsoft.Web.Infrastructure/1.0.0": {
-        "runtime": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.20105.407"
           }
         }
       },
@@ -1471,27 +1451,6 @@
             "fileVersion": "7.8.0.0"
           }
         }
-      },
-      "Twilio.AspNet.Common/8.1.1": {
-        "runtime": {
-          "lib/netstandard2.0/Twilio.AspNet.Common.dll": {
-            "assemblyVersion": "8.1.1.0",
-            "fileVersion": "8.1.1.0"
-          }
-        }
-      },
-      "Twilio.AspNet.Mvc/8.1.1": {
-        "dependencies": {
-          "Microsoft.AspNet.Mvc": "5.3.0",
-          "Twilio": "7.8.0",
-          "Twilio.AspNet.Common": "8.1.1"
-        },
-        "runtime": {
-          "lib/net462/Twilio.AspNet.Mvc.dll": {
-            "assemblyVersion": "8.1.1.0",
-            "fileVersion": "8.1.1.0"
-          }
-        }
       }
     }
   },
@@ -1571,33 +1530,33 @@
       "path": "mailkit/3.2.0",
       "hashPath": "mailkit.3.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNet.Mvc/5.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Q1LcXRqTPmbXJAdf45PsxI6JYnCQP4vBfPCgDFd4dYf8ojxFTo4PH333PC4TzbOqRHxrUWGwgBdcR5T2jNwpHQ==",
-      "path": "microsoft.aspnet.mvc/5.3.0",
-      "hashPath": "microsoft.aspnet.mvc.5.3.0.nupkg.sha512"
-    },
-    "Microsoft.AspNet.Razor/3.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-5vJ0UKE/n381qcaKwFHxCwzb/YVuHzrm155iTgQhiv7+xdg2PE+54u+NPqu6C9AeRVOiwbh8/EOZwD16bLvWkg==",
-      "path": "microsoft.aspnet.razor/3.3.0",
-      "hashPath": "microsoft.aspnet.razor.3.3.0.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebPages/3.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2ATJrA8KNx2EpBWNjwy4P+NjQ06cZWjYsTZ5NqGNIHaU/i3NKmtpoaE90NGmVRaKF5rryGfADnvPQ56f61OuWg==",
-      "path": "microsoft.aspnet.webpages/3.3.0",
-      "hashPath": "microsoft.aspnet.webpages.3.3.0.nupkg.sha512"
-    },
     "Microsoft.AspNetCore.Authentication.Google/9.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-s6xXDsJd5jZeYho6cLA7/GJSK4hHkUFmbLraQhqav+N3KJ5oMgTGN8g6viANtL8qEBlqea/WJxsulihgXluQsA==",
       "path": "microsoft.aspnetcore.authentication.google/9.0.1",
       "hashPath": "microsoft.aspnetcore.authentication.google.9.0.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.Internal/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M1dzTEl+2+RqT4vWcqEpWasPXHd58wC93U7QMlmPSmx+qixyVxCQjZ183wr7Wa68b4pF7wC501MU9rdA0ZNhMg==",
+      "path": "microsoft.aspnetcore.cryptography.internal/9.0.0",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9X4cx2IHNpYb9ka984BjDpJnKkindW17Z2kR/RI5pbTcbVUVMJjiAKnBhAqH24KtAEf1AU64LD60byzCn0/n8w==",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/9.0.0",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fwQkBQGaiRKDQWBc7PXxDiDXtsUsRPL88Jp0CqjqoDhd9p5uHSyuv6g3ALq2EbCvKcWk/7pOKsJiDomPvp/ptA==",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/9.0.0",
+      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.9.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/9.0.0": {
       "type": "package",
@@ -1809,6 +1768,20 @@
       "path": "microsoft.extensions.hosting.abstractions/9.0.0",
       "hashPath": "microsoft.extensions.hosting.abstractions.9.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Identity.Core/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+cQjUs8PIheIMALzrf/e4gW6A/yOK8XYBxeEmAfLvVIaV9lsBGvVT0zjEZ1KPQDJ9nUeQ9uAw077J7LPUwv8wA==",
+      "path": "microsoft.extensions.identity.core/9.0.0",
+      "hashPath": "microsoft.extensions.identity.core.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Identity.Stores/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XG3opf0KgWoYAUdLRhrIvI46W+/E45Ov8rzgwr0omrq5u06MCrsuMm0nPmd+pIWjMXRxbBk1uL47zGyW1lI5Hw==",
+      "path": "microsoft.extensions.identity.stores/9.0.0",
+      "hashPath": "microsoft.extensions.identity.stores.9.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging/9.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1920,13 +1893,6 @@
       "sha512": "sha512-N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug==",
       "path": "microsoft.sqlserver.server/1.0.0",
       "hashPath": "microsoft.sqlserver.server.1.0.0.nupkg.sha512"
-    },
-    "Microsoft.Web.Infrastructure/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
-      "path": "microsoft.web.infrastructure/1.0.0",
-      "hashPath": "microsoft.web.infrastructure.1.0.0.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "type": "package",
@@ -2410,20 +2376,6 @@
       "sha512": "sha512-GsW+XAwXX1F2YKHoQuO7T73/awAxOskdVgtvsCi6mnHYVq0cffM1CZUQdERmRt9UiCmEvt32sPe7qy/On5TBzg==",
       "path": "twilio/7.8.0",
       "hashPath": "twilio.7.8.0.nupkg.sha512"
-    },
-    "Twilio.AspNet.Common/8.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-o4y2Vm9AfFrjuHOTksPshvsEbz/UJEUkzwHR6aTQaG/4ic3CaB2RQWNFwHjEbwR38YjGbHslOCjBsudBbB+Ukw==",
-      "path": "twilio.aspnet.common/8.1.1",
-      "hashPath": "twilio.aspnet.common.8.1.1.nupkg.sha512"
-    },
-    "Twilio.AspNet.Mvc/8.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-wlQXlGoGf5+mlVDYHHn4yH6J5UIausAnt0q/vjxCd4Y3+M7NwMjBAHN+Mxrc9qWbd40KWKiH16p+bzS58sBGJA==",
-      "path": "twilio.aspnet.mvc/8.1.1",
-      "hashPath": "twilio.aspnet.mvc.8.1.1.nupkg.sha512"
     }
   }
 }

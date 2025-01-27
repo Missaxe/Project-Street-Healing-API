@@ -1,19 +1,21 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Street.Healing.API.Context;
+using Street.Healing.API.Context.GoogleUser;
+using Street.Healing.API.Context.User;
 using Street.Healing.API.Helpers;
-using Street.Healing.API.JwtFeatures;
 using Street.Healing.API.RequestsDto.GoogleSignIn;
+using Street.Healing.API.Services;
+using Twilio.Jwt.AccessToken;
 
 namespace Street.Healing.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GoogleSignInController(ILogger<GoogleSignInController> logger, UserManager<User> userManager, JwtHandler jwtHandler) : ControllerBase
+    public class GoogleSignInController(ILogger<GoogleSignInController> logger,UserManager<GoogleUser> userManager, IJwtHandler jwtHandler) : ControllerBase
     {
         private readonly ILogger<GoogleSignInController> _logger = logger;
-        private readonly JwtHandler _jwtHandler = jwtHandler;
-        private readonly UserManager<User> _userManager = userManager;
+        private readonly IJwtHandler _jwtHandler = jwtHandler;
+        private readonly UserManager<GoogleUser> _userManager = userManager;
 
         [HttpPost("register")]
         public async Task<IActionResult> ExternalLogin([FromBody] ExternalAuthDto externalAuth)
@@ -33,12 +35,12 @@ namespace Street.Healing.API.Controllers
 
                     if (user == null)
                     {
-                        user = new User { Email = payload.Email, FirstName = payload.Name, LastName = payload.FamilyName };
+                        user = new GoogleUser { Email = payload.Email, UserName = payload.Email };
                         await _userManager.CreateAsync(user);
 
                         //prepare and send an email for the email confirmation
-
-                        await _userManager.AddToRoleAsync(user, "Viewer");
+                        
+                        //await _userManager.AddToRoleAsync(user,"ADMIN");
                         await _userManager.AddLoginAsync(user, info);
                     }
                     else
@@ -50,14 +52,19 @@ namespace Street.Healing.API.Controllers
                 if (user == null)
                     return BadRequest("Invalid External Authentication.");
 
+                //var token = await _jwtHandler.GenerateToken(user);
+                //return Ok(new AuthResponseDto { Token = token, IsAuthSuccessful = true ,ErrorMessage = ErrorMessages.UserAdded, });
+
+                return Ok(new AuthResponseDto { Token = "", IsAuthSuccessful = true, ErrorMessage = ErrorMessages.UserAdded, });
+
                 //check for the Locked out account
 
-                return Ok(new
-                {
-                    Status = 200,
-                    Message = ErrorMessages.UserAdded,
+                //return Ok(new
+                //{
+                //    Status = 200,
+                //    Message = ErrorMessages.UserAdded,
 
-                });
+                //});
             }
             catch (Exception ex)
             {

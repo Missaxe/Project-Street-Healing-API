@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Street.Healing.API.Context;
+using Street.Healing.API.Context.User;
 using Street.Healing.API.RequestsDto.User;
 using static Street.Healing.API.Services.PasswordServices;
 

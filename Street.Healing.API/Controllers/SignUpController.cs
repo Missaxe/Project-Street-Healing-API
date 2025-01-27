@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using Street.Healing.API.Context;
+using Street.Healing.API.Context.User;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.MailStyling;
 using Street.Healing.API.RequestsDto.User;

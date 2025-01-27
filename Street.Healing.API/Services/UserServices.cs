@@ -1,6 +1,6 @@
-﻿using Street.Healing.API.Context;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Street.Healing.API.Context.User;
 
 namespace Street.Healing.API.Services
 {

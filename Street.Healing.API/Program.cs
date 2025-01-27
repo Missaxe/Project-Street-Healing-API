@@ -1,9 +1,11 @@
 
+using Google;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Serilog;
-using Street.Healing.API.Context;
+using Street.Healing.API.Context.GoogleUser;
+using Street.Healing.API.Context.User;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.Services;
 
@@ -32,6 +34,9 @@ namespace Street.Healing.API
             //Database Configuration
             builder.Services.AddDbContext<UserDbContext>(item =>
             item.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
+            builder.Services.AddDbContext<GoogleUserDbContext>(options =>
+           options.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
+
 
             //Add Email Configs
             var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
@@ -43,7 +48,21 @@ namespace Street.Healing.API
             builder.Services.AddScoped<IUserServices, UserServices>();
             builder.Services.AddScoped<IEmailServices, EmailServices>();
             builder.Services.AddScoped<IPasswordServices, PasswordServices>();
-            //builder.Services.AddIdentity<IdentityUser,User>();
+            builder.Services.AddTransient<IJwtHandler, JwtHandler>();
+
+            builder.Services.AddIdentity<GoogleUser, IdentityRole>(opt =>
+            {
+                opt.Password.RequiredLength = 7;
+                opt.Password.RequireDigit = false;
+
+                opt.User.RequireUniqueEmail = true;
+
+                opt.Lockout.AllowedForNewUsers = true;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(2);
+                opt.Lockout.MaxFailedAccessAttempts = 3;
+            }).AddEntityFrameworkStores<GoogleUserDbContext>()
+                .AddDefaultTokenProviders();
+  
 
             var app = builder.Build();
 
