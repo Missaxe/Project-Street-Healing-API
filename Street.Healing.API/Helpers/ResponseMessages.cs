@@ -2,7 +2,7 @@
 
 namespace Street.Healing.API.Helpers
 {
-    public static class ErrorMessages
+    public static class ResponseMessages
     {
         public const string EmailAlreadyExists = "This email already exists. Please try with another one.";
         public const string EmailSent = "Email successfully sent.";
@@ -16,6 +16,8 @@ namespace Street.Healing.API.Helpers
         public const string EmptyPasword = "Password is empty. Please try again.";
         public const string OtpFailed = "Failed to send OTP email.";
         public const string GoogleSignInFailed = "Failed to sign in with google.";
+        public const string ApiKeyNotProvided = "Api Key was not provided.";
+        public const string UnauthorizedClient= "Unauthorized client.";
 
 
 

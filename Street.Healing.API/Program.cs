@@ -7,6 +7,7 @@ using Serilog;
 using Street.Healing.API.Context.GoogleUser;
 using Street.Healing.API.Context.User;
 using Street.Healing.API.Helpers;
+using Street.Healing.API.Middlewares;
 using Street.Healing.API.Services;
 
 namespace Street.Healing.API
@@ -35,12 +36,16 @@ namespace Street.Healing.API
             builder.Services.AddDbContext<UserDbContext>(item =>
             item.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
             builder.Services.AddDbContext<GoogleUserDbContext>(options =>
-           options.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
+
+            //API key Configuration
+
+
 
 
             //Add Email Configs
             var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
-           builder.Services.AddSingleton(emailConfig);
+            builder.Services.AddSingleton(emailConfig);
 
 
             //Services Dependency Injection 
@@ -61,8 +66,8 @@ namespace Street.Healing.API
                 opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(2);
                 opt.Lockout.MaxFailedAccessAttempts = 3;
             }).AddEntityFrameworkStores<GoogleUserDbContext>()
-                .AddDefaultTokenProviders();
-  
+            .AddDefaultTokenProviders();
+
 
             var app = builder.Build();
 
@@ -80,13 +85,20 @@ namespace Street.Healing.API
             app.UseSwagger();
             app.UseSwaggerUI();
 
+
+
             //Allow Access to Client
             app.UseCors(
-                 builder => builder.AllowAnyOrigin()
+                 builder => builder.WithOrigins()
+                      .AllowAnyOrigin()
                       .AllowAnyMethod()
                       .AllowAnyHeader()
+                    
              );
 
+            //Using API key middleware to validate key from client request 
+
+            app.UseMiddleware<ApiKeyMiddleware>();
 
             app.MapControllers();
 

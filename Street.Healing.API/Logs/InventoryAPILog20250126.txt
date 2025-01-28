@@ -1,0 +1,165 @@
+2025-01-26 19:24:03.385 +01:00 [INF] Now listening on: https://localhost:7066
+2025-01-26 19:24:03.470 +01:00 [INF] Now listening on: http://localhost:5050
+2025-01-26 19:24:03.566 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-26 19:24:03.615 +01:00 [INF] Hosting environment: Development
+2025-01-26 19:24:03.617 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-01-26 21:04:28.293 +01:00 [INF] Now listening on: https://localhost:7066
+2025-01-26 21:04:28.352 +01:00 [INF] Now listening on: http://localhost:5050
+2025-01-26 21:04:28.403 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-26 21:04:28.404 +01:00 [INF] Hosting environment: Development
+2025-01-26 21:04:28.406 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-01-26 21:04:44.953 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - null null
+2025-01-26 21:04:45.320 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - 200 null text/html;charset=utf-8 381.686ms
+2025-01-26 21:04:45.412 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.css - null null
+2025-01-26 21:04:45.420 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/swagger-ui.css - null null
+2025-01-26 21:04:45.420 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/swagger-ui-bundle.js - null null
+2025-01-26 21:04:45.425 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.js - null null
+2025-01-26 21:04:45.425 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/swagger-ui-standalone-preset.js - null null
+2025-01-26 21:04:45.450 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.js - 200 null application/javascript;charset=utf-8 26.6813ms
+2025-01-26 21:04:45.454 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-01-26 21:04:45.463 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-26 21:04:45.466 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.css - 200 202 text/css 59.7826ms
+2025-01-26 21:04:45.495 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - 200 13788 application/javascript; charset=utf-8 32.1353ms
+2025-01-26 21:04:45.521 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-01-26 21:04:45.521 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-01-26 21:04:45.564 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-01-26 21:04:45.576 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/swagger-ui.css - 200 152035 text/css 170.4613ms
+2025-01-26 21:04:45.576 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/swagger-ui-standalone-preset.js - 200 230007 text/javascript 153.4772ms
+2025-01-26 21:04:45.579 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/swagger-ui-bundle.js - 200 1426050 text/javascript 159.1311ms
+2025-01-26 21:04:45.584 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_vs/browserLink - null null
+2025-01-26 21:04:45.717 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.739ms
+2025-01-26 21:04:46.032 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - null null
+2025-01-26 21:04:46.057 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/favicon-32x32.png - null null
+2025-01-26 21:04:46.097 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-01-26 21:04:46.101 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/favicon-32x32.png - 200 628 image/png 43.3398ms
+2025-01-26 21:04:46.328 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 295.2431ms
+2025-01-26 21:05:17.308 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/signup/register - null null
+2025-01-26 21:05:17.328 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:05:17.332 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/signup/register - 204 null null 23.9883ms
+2025-01-26 21:05:17.335 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/signup/register - application/json 93
+2025-01-26 21:05:17.345 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:05:17.351 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:05:17.417 +01:00 [INF] Route matched with {action = "AddUser", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUserAsync(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.SignUpController (Street.Healing.API).
+2025-01-26 21:05:19.601 +01:00 [INF] Executed DbCommand (115ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-01-26 21:05:19.643 +01:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-26 21:05:19.663 +01:00 [INF] Executed action Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API) in 2228.5077ms
+2025-01-26 21:05:19.670 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:05:19.693 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/signup/register - 400 null application/json; charset=utf-8 2357.7111ms
+2025-01-26 21:05:55.156 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/signup/register - null null
+2025-01-26 21:05:55.165 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:05:55.167 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/signup/register - 204 null null 10.7701ms
+2025-01-26 21:05:55.169 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/signup/register - application/json 93
+2025-01-26 21:05:55.181 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:05:55.183 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:05:55.186 +01:00 [INF] Route matched with {action = "AddUser", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUserAsync(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.SignUpController (Street.Healing.API).
+2025-01-26 21:05:55.240 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-01-26 21:05:55.249 +01:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-26 21:05:55.253 +01:00 [INF] Executed action Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API) in 62.8984ms
+2025-01-26 21:05:55.256 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:05:55.259 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/signup/register - 400 null application/json; charset=utf-8 89.5267ms
+2025-01-26 21:08:30.497 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/signup/register - null null
+2025-01-26 21:08:30.504 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:08:30.508 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/signup/register - 204 null null 10.9618ms
+2025-01-26 21:08:30.517 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/signup/register - application/json 93
+2025-01-26 21:08:30.528 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:08:30.529 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:08:30.532 +01:00 [INF] Route matched with {action = "AddUser", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUserAsync(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.SignUpController (Street.Healing.API).
+2025-01-26 21:08:30.644 +01:00 [INF] Executed DbCommand (10ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-01-26 21:08:30.650 +01:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-26 21:08:30.653 +01:00 [INF] Executed action Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API) in 117.386ms
+2025-01-26 21:08:30.657 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:08:30.660 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/signup/register - 400 null application/json; charset=utf-8 142.3649ms
+2025-01-26 21:09:13.826 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/signup/register - null null
+2025-01-26 21:09:13.840 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:09:13.842 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/signup/register - 204 null null 16.335ms
+2025-01-26 21:09:13.848 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/signup/register - application/json 93
+2025-01-26 21:09:13.878 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:09:13.884 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:09:13.890 +01:00 [INF] Route matched with {action = "AddUser", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUserAsync(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.SignUpController (Street.Healing.API).
+2025-01-26 21:09:13.897 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-01-26 21:09:13.912 +01:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-26 21:09:13.928 +01:00 [INF] Executed action Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API) in 33.6078ms
+2025-01-26 21:09:13.943 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:09:13.958 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/signup/register - 400 null application/json; charset=utf-8 110.5783ms
+2025-01-26 21:10:12.413 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/signup/register - null null
+2025-01-26 21:10:12.417 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:10:12.418 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/signup/register - 204 null null 5.8753ms
+2025-01-26 21:10:12.429 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/signup/register - application/json 93
+2025-01-26 21:10:12.449 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:10:12.451 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:10:12.454 +01:00 [INF] Route matched with {action = "AddUser", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUserAsync(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.SignUpController (Street.Healing.API).
+2025-01-26 21:10:12.466 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-01-26 21:10:12.471 +01:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-26 21:10:12.474 +01:00 [INF] Executed action Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API) in 14.5042ms
+2025-01-26 21:10:12.490 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:10:12.494 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/signup/register - 400 null application/json; charset=utf-8 65.9714ms
+2025-01-26 21:15:55.872 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/signup/register - null null
+2025-01-26 21:15:55.876 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:15:55.878 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/signup/register - 204 null null 6.8594ms
+2025-01-26 21:15:55.881 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/signup/register - application/json 93
+2025-01-26 21:15:55.891 +01:00 [INF] CORS policy execution successful.
+2025-01-26 21:15:55.893 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:15:55.895 +01:00 [INF] Route matched with {action = "AddUser", controller = "SignUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddUserAsync(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.SignUpController (Street.Healing.API).
+2025-01-26 21:15:55.923 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-01-26 21:15:55.928 +01:00 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-26 21:15:55.931 +01:00 [INF] Executed action Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API) in 31.3878ms
+2025-01-26 21:15:55.934 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.SignUpController.AddUserAsync (Street.Healing.API)'
+2025-01-26 21:15:55.937 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/signup/register - 400 null application/json; charset=utf-8 56.0438ms
+2025-01-26 21:25:40.897 +01:00 [INF] Now listening on: https://localhost:7066
+2025-01-26 21:25:41.022 +01:00 [INF] Now listening on: http://localhost:5050
+2025-01-26 21:25:41.234 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-26 21:25:41.236 +01:00 [INF] Hosting environment: Development
+2025-01-26 21:25:41.238 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-01-26 22:21:32.208 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/googlesignin/register - application/x-www-form-urlencoded 1241
+2025-01-26 22:21:32.411 +01:00 [INF] CORS policy execution successful.
+2025-01-26 22:21:32.424 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
+2025-01-26 22:21:32.462 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
+2025-01-26 22:21:32.532 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-01-26 22:21:32.577 +01:00 [INF] Executed action Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API) in 97.5105ms
+2025-01-26 22:21:32.643 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
+2025-01-26 22:21:32.662 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/googlesignin/register - 415 null application/problem+json; charset=utf-8 463.8991ms
+2025-01-26 22:21:32.718 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7066/favicon.ico - null null
+2025-01-26 22:21:32.774 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/favicon.ico - 404 0 null 55.9561ms
+2025-01-26 22:21:32.782 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7066/favicon.ico, Response status code: 404

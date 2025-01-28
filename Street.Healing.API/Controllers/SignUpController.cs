@@ -30,18 +30,18 @@ namespace Street.Healing.API.Controllers
             try
             {
                 if (userObj == null)
-                    return BadRequest(new { Message = ErrorMessages.EmptyUserObj });
+                    return BadRequest(new { Message = ResponseMessages.EmptyUserObj });
 
                 // check email
                 if (await _userServices.CheckEmailExistAsync(userObj.Email))
-                    return BadRequest(new { Message = ErrorMessages.EmailAlreadyExists });
+                    return BadRequest(new { Message = ResponseMessages.EmailAlreadyExists });
 
                 if (string.IsNullOrEmpty(userObj.Password))
-                    return BadRequest(new { Message = ErrorMessages.EmptyPasword });
+                    return BadRequest(new { Message = ResponseMessages.EmptyPasword });
 
 
                 if (!string.Equals(userObj.Password, userObj.ConfirmPassword))
-                    return BadRequest(new { Message = ErrorMessages.PasswordsNotTheSame });
+                    return BadRequest(new { Message = ResponseMessages.PasswordsNotTheSame });
 
                 var passMessage = DataValidators.IsPasswordValid(userObj.Password);
 
@@ -58,14 +58,14 @@ namespace Street.Healing.API.Controllers
                 return Ok(new
                 {
                     Status = 200,
-                    Message = ErrorMessages.UserAdded,
+                    Message = ResponseMessages.UserAdded,
                     userObject.Id
                 });
             }
             catch (Exception ex)
             {
                 _logger.LogError(message: $"Exception during the process of adding the user : {ex.Message} ");
-                return StatusCode(500, new { Status = 500, Message = ErrorMessages.OtpFailed });
+                return StatusCode(500, new { Status = 500, Message = ResponseMessages.OtpFailed });
             }
 
 

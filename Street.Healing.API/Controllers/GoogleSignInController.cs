@@ -55,7 +55,7 @@ namespace Street.Healing.API.Controllers
                 //var token = await _jwtHandler.GenerateToken(user);
                 //return Ok(new AuthResponseDto { Token = token, IsAuthSuccessful = true ,ErrorMessage = ErrorMessages.UserAdded, });
 
-                return Ok(new AuthResponseDto { Token = "", IsAuthSuccessful = true, ErrorMessage = ErrorMessages.UserAdded, });
+                return Ok(new AuthResponseDto { Token = "", IsAuthSuccessful = true, ErrorMessage = ResponseMessages.UserAdded, });
 
                 //check for the Locked out account
 
@@ -69,7 +69,7 @@ namespace Street.Healing.API.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(message: $"Exception during the process of adding the user with Google Account : {ex.Message} ");
-                return StatusCode(500, new { Status = 500, Message = ErrorMessages.GoogleSignInFailed });
+                return StatusCode(500, new { Status = 500, Message = ResponseMessages.GoogleSignInFailed });
             }
         }
 

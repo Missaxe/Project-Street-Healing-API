@@ -40,13 +40,13 @@ namespace Street.Healing.API.Controllers
                     Status = 200,
                     id,
                     otp,
-                    Message = ErrorMessages.EmailSent
+                    Message = ResponseMessages.EmailSent
                 });
             }
             catch (Exception ex)
             {
                 _logger.LogError($"Error in SendToken: {ex.Message}");
-                return StatusCode(500, new { Status = 500, Message = ErrorMessages.UserNotAdded });
+                return StatusCode(500, new { Status = 500, Message = ResponseMessages.UserNotAdded });
             }
         }
     }
