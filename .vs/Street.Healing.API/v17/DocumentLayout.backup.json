@@ -43,8 +43,7 @@
               "ViewState": "AgIAAC8AAAAAAAAAAAAkwDYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T14:55:17.184Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -54,7 +53,7 @@
               "RelativeDocumentMoniker": "Street.Healing.API\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Street.Healing.API\\Street.Healing.API\\Controllers\\UserController.cs",
               "RelativeToolTip": "Street.Healing.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAgwGYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAgwG8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T15:39:54.414Z",
               "IsPinned": true,
@@ -70,8 +69,7 @@
               "RelativeToolTip": "Street.Healing.API\\Services\\IUserServices.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAewA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:48:25.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:48:25.709Z"
             },
             {
               "$type": "Document",
@@ -83,8 +81,7 @@
               "RelativeToolTip": "Street.Healing.API\\Services\\UserServices.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwCwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:39:12.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T16:39:12.052Z"
             },
             {
               "$type": "Document",
@@ -96,8 +93,7 @@
               "RelativeToolTip": "Street.Healing.API\\Services\\PasswordServices.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAYwEgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T17:33:42.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-30T17:33:42.193Z"
             }
           ]
         }
