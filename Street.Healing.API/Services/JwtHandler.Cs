@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using Street.Healing.API.Context.GoogleUser;
 using Street.Healing.API.Context.User;
 using Street.Healing.API.Controllers;
+using Street.Healing.API.Helpers;
 using Street.Healing.API.RequestsDto.GoogleSignIn;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -14,16 +15,16 @@ namespace Street.Healing.API.Services
     public class JwtHandler : IJwtHandler
     {
         private readonly IConfiguration _configuration;
-        //private readonly IConfigurationSection _jwtSettings;
+        private readonly IConfigurationSection _jwtSettings;
         private readonly IConfigurationSection _goolgeSettings;
-        //private readonly UserManager<GoogleUser> _userManager;
+        private readonly UserManager<GoogleUser> _userManager;
         private readonly ILogger<JwtHandler> _logger;
         public JwtHandler(IConfiguration configuration/*, UserManager<GoogleUser> userManager*/, ILogger<JwtHandler> logger)
         {
             _logger = logger;
             //_userManager = userManager;
             _configuration = configuration;
-            //_jwtSettings = _configuration.GetSection("JwtSettings");
+            _jwtSettings = _configuration.GetSection("JwtSettings");
             _goolgeSettings = _configuration.GetSection("GoogleAuthSettings");
         } 
 
@@ -41,7 +42,7 @@ namespace Street.Healing.API.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError(message: $"Exception during the process of verifying google token : {ex.Message} ");
+                _logger.LogError(message: $"{ConstMessages.ExceptionVerifyToken} {ex.Message} ");
                 return null;
             }
         }

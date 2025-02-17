@@ -11,65 +11,40 @@ namespace Street.Healing.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GoogleSignInController(ILogger<GoogleSignInController> logger,UserManager<GoogleUser> userManager, IJwtHandler jwtHandler) : ControllerBase
+    public class GoogleSignInController(ILogger<GoogleSignInController> logger,IGoogleUserService userGoogle, IJwtHandler jwtHandler) : ControllerBase
     {
         private readonly ILogger<GoogleSignInController> _logger = logger;
         private readonly IJwtHandler _jwtHandler = jwtHandler;
-        private readonly UserManager<GoogleUser> _userManager = userManager;
+        private readonly IGoogleUserService _userGoogle = userGoogle;
 
+        /// <summary>
+        /// External Login using Google
+        /// </summary>
+        /// <param name="externalAuth"></param>
+        /// <returns></returns>
         [HttpPost("register")]
         public async Task<IActionResult> ExternalLogin([FromBody] ExternalAuthDto externalAuth)
         {
             try
             {
                 var payload = await _jwtHandler.VerifyGoogleToken(externalAuth);
+
                 if (payload == null)
-                    return BadRequest("Invalid External Authentication.");
+                    return BadRequest(ConstMessages.InvalidExterAuthentication);
 
-                var info = new UserLoginInfo(externalAuth.Provider ?? String.Empty, payload.Subject, externalAuth.Provider);
-
-                var user = await _userManager.FindByLoginAsync(info.LoginProvider, info.ProviderKey);
+                var user = await _userGoogle.LoginOrCreateUserAsync(externalAuth.Provider, payload);
+               
                 if (user == null)
-                {
-                    user = await _userManager.FindByEmailAsync(payload.Email);
+                    return BadRequest(ConstMessages.InvalidAuthentication);
+             
 
-                    if (user == null)
-                    {
-                        user = new GoogleUser { Email = payload.Email, UserName = payload.Email };
-                        await _userManager.CreateAsync(user);
+                return Ok(new AuthResponseDto { IsAuthSuccessful = true, ErrorMessage = ConstMessages.UserAdded, });
 
-                        //prepare and send an email for the email confirmation
-                        
-                        //await _userManager.AddToRoleAsync(user,"ADMIN");
-                        await _userManager.AddLoginAsync(user, info);
-                    }
-                    else
-                    {
-                        await _userManager.AddLoginAsync(user, info);
-                    }
-                }
-
-                if (user == null)
-                    return BadRequest("Invalid External Authentication.");
-
-                //var token = await _jwtHandler.GenerateToken(user);
-                //return Ok(new AuthResponseDto { Token = token, IsAuthSuccessful = true ,ErrorMessage = ErrorMessages.UserAdded, });
-
-                return Ok(new AuthResponseDto { Token = "", IsAuthSuccessful = true, ErrorMessage = ResponseMessages.UserAdded, });
-
-                //check for the Locked out account
-
-                //return Ok(new
-                //{
-                //    Status = 200,
-                //    Message = ErrorMessages.UserAdded,
-
-                //});
             }
             catch (Exception ex)
             {
-                _logger.LogError(message: $"Exception during the process of adding the user with Google Account : {ex.Message} ");
-                return StatusCode(500, new { Status = 500, Message = ResponseMessages.GoogleSignInFailed });
+                _logger.LogError(message: $"{ConstMessages.ExceptionExternalLogin} {ex.Message} ");
+                return StatusCode(500, new { Status = 500, Message = ConstMessages.GoogleSignInFailed });
             }
         }
 

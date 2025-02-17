@@ -30,24 +30,24 @@ namespace Street.Healing.API.Controllers
                 var user = await _userServices.GetUserAsync(userObj.Email);
 
                 if (user == null)
-                    return NotFound(new { Message = ResponseMessages.UserNotFound });
+                    return NotFound(new { Message = ConstMessages.UserNotFound });
 
-                if (!_passwordServices.VerifyPassword(userObj.Password, user.HashPassword, user.SaltPassword))
+                if (!DataValidators.VerifyPassword(userObj.Password, user.HashPassword, user.SaltPassword))
                 {
-                    return BadRequest(new { Message = ResponseMessages.IncorrectPasword });
+                    return BadRequest(new { Message = ConstMessages.IncorrectPasword });
                 }
 
                 return Ok(new
                 {
                     Status = 200,
-                    Message = ResponseMessages.UserLogged
+                    Message = ConstMessages.UserLogged
                 });
 
             }
             catch(Exception ex)
             {
-                _logger.LogError(message: $"Exception during the process of adding the user : {ex.Message} ");
-                return StatusCode(500, new { Status = 500, Message = ResponseMessages.OtpFailed });
+                _logger.LogError(message: $"{ConstMessages.ExceptionLoginUser} {ex.Message} ");
+                return StatusCode(500, new { Status = 500, Message = ConstMessages.OtpFailed });
 
             }
 

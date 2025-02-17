@@ -19,15 +19,15 @@ namespace Street.Healing.API.Middlewares
                     var extractedApiKey))
             {
                 context.Response.StatusCode = 401;
-                await context.Response.WriteAsync(ResponseMessages.ApiKeyNotProvided);
+                await context.Response.WriteAsync(ConstMessages.ApiKeyNotProvided);
                 return;
             }
             var appSettings = context.RequestServices.GetRequiredService<IConfiguration>();
-            var apiKey = appSettings.GetValue<string>(APIKEY);
+            var apiKey = appSettings.GetValue<string>(APIKEY) ?? string.Empty;
             if (!apiKey.Equals(extractedApiKey))
             {
                 context.Response.StatusCode = 401;
-                await context.Response.WriteAsync(ResponseMessages.UnauthorizedClient);
+                await context.Response.WriteAsync(ConstMessages.UnauthorizedClient);
                 return;
             }
             await _next(context);

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Street.Healing.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d83af0769c84e788c4adb12b7885ba0c3b3648d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a7da45d7afcdb3c59a6331ff4732731f1d78979")]
 [assembly: System.Reflection.AssemblyProductAttribute("Street.Healing.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Street.Healing.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

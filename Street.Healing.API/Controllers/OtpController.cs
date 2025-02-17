@@ -30,8 +30,8 @@ namespace Street.Healing.API.Controllers
                 string otp = _passwordServices.CreateJwt();
                 var htmlMail = new HtmlMail(otp);
                 var message = new Message(
-                    new string[] { email! },
-                    "OTP Confirmation",
+                    [email!],
+                    ConstMessages.OtpConfirmation,
                     htmlMail.HtmlBody,
                     true);
                 await _emailServices.SendEmailAsync(message);
@@ -40,13 +40,13 @@ namespace Street.Healing.API.Controllers
                     Status = 200,
                     id,
                     otp,
-                    Message = ResponseMessages.EmailSent
+                    Message = ConstMessages.EmailSent
                 });
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error in SendToken: {ex.Message}");
-                return StatusCode(500, new { Status = 500, Message = ResponseMessages.UserNotAdded });
+                _logger.LogError($"{ConstMessages.ExceptionSendToken} {ex.Message}");
+                return StatusCode(500, new { Status = 500, Message = ConstMessages.UserNotAdded });
             }
         }
     }
