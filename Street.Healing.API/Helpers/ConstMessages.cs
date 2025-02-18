@@ -18,9 +18,14 @@ namespace Street.Healing.API.Helpers
         public const string OtpFailed = "Failed to send OTP email.";
         public const string GoogleSignInFailed = "Failed to sign in with google.";
         public const string ApiKeyNotProvided = "Api Key was not provided.";
+        public const string ApiKeyKO= "problem with Api Key , check logs for more details .";
+        public const string RateLimitKO = "problem with RateLimiting , check logs for more details .";
         public const string UnauthorizedClient= "Unauthorized client.";
         public const string InvalidAuthentication = "Invalid External Authentication.";
-        public const string ExceptionExternalLogin = "Exception during the process of adding the user with Google Account in ExternalLogin :";
+        public const string ExInvkAsyncJWT = "Exception during the process InvokeAsync in JWTMiddleware :";
+        public const string ExInvkMiddlewaFct = "Exception during the process Invoke in MiddlewareFct :";
+        public const string ExceptionExternalLogin = "Exception during the process of adding the user with Google Account in GoogleSignInController :";
+        public const string ExInvkAsyncRateLimit = "Exception during the process InvokeAsync in ExternalLogin :";
         public const string ExceptionSignUpUser = "Exception during the process of adding user in AddUserAsync :";
         public const string ExceptionIsValidEmail= "Exception in method IsValidEmail from class DataValidators :";
         public const string ExceptionVerifyPass = "Exception in method VerifyPassword from class DataValidators :";
@@ -33,6 +38,9 @@ namespace Street.Healing.API.Helpers
         public const string AlphaNumPass = "Password should be AlphaNumeric";
         public const string RegexPass = "[<,>,@,!,#,$,%,^,&,*,(,),_,+,\\[,\\],{,},?,:,;,|,',\\,.,/,~,`,-,=]";
         public const string SpecialCharPass =  "Password should contain special character";
+        public const string XApiKey = "XApiKey";
+        public const string RateLimitExceeded = "Rate limit exceeded";
+ 
 
 
 
