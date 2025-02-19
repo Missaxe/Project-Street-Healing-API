@@ -47,7 +47,7 @@ namespace Street.Healing.API.Controllers
             catch(Exception ex)
             {
                 _logger.LogError(message: $"{ConstMessages.ExceptionLoginUser} {ex.Message} ");
-                return StatusCode(500, new { Status = 500, Message = ConstMessages.OtpFailed });
+                return StatusCode(500, new { Status = StatusCodes.Status500InternalServerError, Message = ConstMessages.ExceptionLoginUser });
 
             }
 

@@ -68,10 +68,9 @@ namespace Street.Healing.API.Helpers
         {
             try
             {
-                var saltBytes = Convert.FromBase64String(storedSalt);
-                var PassBytes = Convert.FromBase64String(enteredPassword);
+                var saltBytes = Convert.FromBase64String(storedSalt);             
                 var rfc2898DeriveBytes =  new Rfc2898DeriveBytes(
-                    PassBytes,
+                    enteredPassword,
                     saltBytes,
                     10000,
                     HashAlgorithmName.SHA1
@@ -81,7 +80,8 @@ namespace Street.Healing.API.Helpers
             catch (Exception ex)
             {
                 _logger.LogError(message: $"{ConstMessages.ExceptionVerifyPass} {ex.Message} ");
-                return false;
+                throw;
+            
             }
 
         }

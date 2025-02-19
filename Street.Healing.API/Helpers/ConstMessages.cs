@@ -22,8 +22,8 @@ namespace Street.Healing.API.Helpers
         public const string RateLimitKO = "problem with RateLimiting , check logs for more details .";
         public const string UnauthorizedClient= "Unauthorized client.";
         public const string InvalidAuthentication = "Invalid External Authentication.";
-        public const string ExInvkAsyncJWT = "Exception during the process InvokeAsync in JWTMiddleware :";
-        public const string ExInvkMiddlewaFct = "Exception during the process Invoke in MiddlewareFct :";
+        public const string ExInvkAsyncJWT = "Exception during the process InvokeAsync in JWTTokenMiddleware :";
+        public const string ExInvkMiddlewaFct = "Exception during the process InvokeAsync in MiddlewareFct :";
         public const string ExceptionExternalLogin = "Exception during the process of adding the user with Google Account in GoogleSignInController :";
         public const string ExInvkAsyncRateLimit = "Exception during the process InvokeAsync in ExternalLogin :";
         public const string ExceptionSignUpUser = "Exception during the process of adding user in AddUserAsync :";

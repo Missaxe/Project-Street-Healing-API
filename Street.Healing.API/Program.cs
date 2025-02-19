@@ -55,6 +55,10 @@ namespace Street.Healing.API
             builder.Services.AddScoped<IPasswordServices, PasswordServices>();
             builder.Services.AddTransient<IJwtHandler, JwtHandler>();
 
+            //Transien for Middleware Request
+            builder.Services.AddTransient<RateLimitingMiddleware>();
+            builder.Services.AddTransient<JWTTokenMiddleware>();
+
             builder.Services.AddIdentity<GoogleUser, IdentityRole>(opt =>
             {
                 opt.Password.RequiredLength = 7;
@@ -98,7 +102,9 @@ namespace Street.Healing.API
 
             //Using API key middleware to validate key from client request 
 
-            app.UseMiddleware<ApiKeyMiddleware>();
+            app.UseMiddleware<RateLimitingMiddleware>();
+
+            app.UseMiddleware<JWTTokenMiddleware>();
 
             app.MapControllers();
 
