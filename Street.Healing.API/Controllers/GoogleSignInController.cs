@@ -1,21 +1,21 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Street.Healing.API.Context.GoogleUser;
-using Street.Healing.API.Context.User;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.RequestsDto.GoogleSignIn;
 using Street.Healing.API.Services;
+using Street.Healing.DAO.Repository;
+using Street.Healing.DTO.ModelsDTO;
 using Twilio.Jwt.AccessToken;
 
 namespace Street.Healing.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class GoogleSignInController(ILogger<GoogleSignInController> logger,IGoogleUserService userGoogle, IJwtHandler jwtHandler) : ControllerBase
+    public class GoogleSignInController(ILogger<GoogleSignInController> logger,IUserGoogleRepository googleUser, IJwtHandler jwtHandler) : ControllerBase
     {
         private readonly ILogger<GoogleSignInController> _logger = logger;
         private readonly IJwtHandler _jwtHandler = jwtHandler;
-        private readonly IGoogleUserService _userGoogle = userGoogle;
+        private readonly IUserGoogleRepository _googleUser = googleUser;
 
         /// <summary>
         /// External Login using Google
@@ -23,7 +23,7 @@ namespace Street.Healing.API.Controllers
         /// <param name="externalAuth"></param>
         /// <returns></returns>
         [HttpPost("register")]
-        public async Task<IActionResult> ExternalLogin([FromBody] ExternalAuthDto externalAuth)
+        public async Task<IActionResult> ExternalLogin([FromBody] UserGoogleDTO externalAuth)
         {
             try
             {
@@ -32,7 +32,7 @@ namespace Street.Healing.API.Controllers
                 if (payload == null)
                     return BadRequest(ConstMessages.InvalidExterAuthentication);
 
-                var user = await _userGoogle.LoginOrCreateUserAsync(externalAuth.Provider, payload);
+                var user = await _googleUser.LoginOrCreateUserAsync(externalAuth.Provider, payload);
                
                 if (user == null)
                     return BadRequest(ConstMessages.InvalidAuthentication);

@@ -155,7 +155,7 @@ END
 2025-01-26 22:21:32.208 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/googlesignin/register - application/x-www-form-urlencoded 1241
 2025-01-26 22:21:32.411 +01:00 [INF] CORS policy execution successful.
 2025-01-26 22:21:32.424 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
-2025-01-26 22:21:32.462 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
+2025-01-26 22:21:32.462 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.UserGoogleDTO) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
 2025-01-26 22:21:32.532 +01:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
 2025-01-26 22:21:32.577 +01:00 [INF] Executed action Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API) in 97.5105ms
 2025-01-26 22:21:32.643 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'

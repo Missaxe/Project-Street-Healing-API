@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using Street.Healing.API.Context.User;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.MailStyling;
-using Street.Healing.API.RequestsDto.User;
 using Street.Healing.API.Services;
+using Street.Healing.DAO.Repository;
+using Street.Healing.DTO.Mapping;
+using Street.Healing.DTO.Models;
+using Street.Healing.DTO.ModelsDTO;
 using System.Collections;
 using static Street.Healing.API.Services.PasswordServices;
 
@@ -12,10 +14,10 @@ namespace Street.Healing.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SignUpController(IUserServices userServices, ILogger<SignUpController> logger) : ControllerBase
+    public class SignUpController(IUserRepository userRepository, ILogger<SignUpController> logger) : ControllerBase
     {
   
-        private readonly IUserServices _userServices = userServices;
+        private readonly IUserRepository _userRepository = userRepository;
         private readonly ILogger<SignUpController> _logger = logger;
 
 
@@ -25,7 +27,7 @@ namespace Street.Healing.API.Controllers
         /// <param name="userObj"></param>
         /// <returns></returns>
         [HttpPost("register")]
-        public async Task<IActionResult> AddUserAsync([FromBody] UserClientDto userObj)
+        public async Task<IActionResult> AddUserAsync([FromBody] UserDTO userObj)
         {
             try
             {
@@ -33,7 +35,7 @@ namespace Street.Healing.API.Controllers
                     return BadRequest(new { Message = ConstMessages.EmptyUserObj });
 
                 // check email
-                if (await _userServices.CheckEmailExistAsync(userObj.Email))
+                if (await _userRepository.CheckEmailExistAsync(userObj.Email))
                     return BadRequest(new { Message = ConstMessages.EmailAlreadyExists });
 
                 if (string.IsNullOrEmpty(userObj.Password))
@@ -49,11 +51,11 @@ namespace Street.Healing.API.Controllers
                 userObj.DateCreated = DateTime.Now;
 
                 //Map from UserRequest to User
-                var mapper = MapperConfig.InitializeAutomapper();
+                var mapper = UserMapperConfig.InitializeAutomapper();
                 var userObject = mapper.Map<User>(userObj);
 
                 //Add user into database 
-                await _userServices.AddUserAsync(userObject);
+                await _userRepository.AddUserAsync(userObject);
 
                 return Ok(new
                 {

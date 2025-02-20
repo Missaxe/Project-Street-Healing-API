@@ -10,7 +10,7 @@
 2025-01-28 10:50:22.037 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/googlesignin/register - application/json 1234
 2025-01-28 10:50:22.057 +01:00 [INF] CORS policy execution successful.
 2025-01-28 10:50:22.067 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
-2025-01-28 10:50:22.142 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
+2025-01-28 10:50:22.142 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.UserGoogleDTO) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
 2025-01-28 10:50:39.724 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
 2025-01-28 10:50:40.163 +01:00 [INF] Now listening on: https://localhost:7066
 2025-01-28 10:50:40.165 +01:00 [INF] Now listening on: http://localhost:5050
@@ -23,7 +23,7 @@
 2025-01-28 10:51:25.309 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/googlesignin/register - application/json 1234
 2025-01-28 10:51:25.325 +01:00 [INF] CORS policy execution successful.
 2025-01-28 10:51:25.329 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
-2025-01-28 10:51:25.390 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
+2025-01-28 10:51:25.390 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.UserGoogleDTO) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
 2025-01-28 10:51:33.311 +01:00 [INF] Executed DbCommand (124ms) [Parameters=[@__loginProvider_0='?' (Size = 450), @__providerKey_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
 SELECT TOP(2) [a].[LoginProvider], [a].[ProviderKey], [a].[ProviderDisplayName], [a].[UserId]
 FROM [AspNetUserLogins] AS [a]

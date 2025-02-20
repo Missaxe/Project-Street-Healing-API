@@ -157,7 +157,7 @@ END
 2025-01-25 20:09:55.415 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/GoogleSignIn/register - application/json 1242
 2025-01-25 20:09:55.431 +01:00 [INF] CORS policy execution successful.
 2025-01-25 20:09:55.437 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
-2025-01-25 20:09:55.466 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
+2025-01-25 20:09:55.466 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.UserGoogleDTO) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
 2025-01-25 20:09:55.488 +01:00 [INF] Executed action Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API) in 6.8884ms
 2025-01-25 20:09:55.492 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
 2025-01-25 20:09:55.495 +01:00 [ERR] An unhandled exception has occurred while executing the request.
@@ -181,7 +181,7 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
 2025-01-25 20:10:32.436 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/GoogleSignIn/register - application/json 145
 2025-01-25 20:10:32.456 +01:00 [INF] CORS policy execution successful.
 2025-01-25 20:10:32.459 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
-2025-01-25 20:10:32.463 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
+2025-01-25 20:10:32.463 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.UserGoogleDTO) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
 2025-01-25 20:10:32.469 +01:00 [INF] Executed action Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API) in 0.8903ms
 2025-01-25 20:10:32.475 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
 2025-01-25 20:10:32.478 +01:00 [ERR] An unhandled exception has occurred while executing the request.
@@ -225,7 +225,7 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
 2025-01-25 20:40:38.562 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/GoogleSignIn/register - application/json 49
 2025-01-25 20:40:38.581 +01:00 [INF] CORS policy execution successful.
 2025-01-25 20:40:38.591 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
-2025-01-25 20:40:38.635 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
+2025-01-25 20:40:38.635 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.UserGoogleDTO) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
 2025-01-25 20:40:38.646 +01:00 [INF] Executed action Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API) in 3.4522ms
 2025-01-25 20:40:38.651 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
 2025-01-25 20:40:38.655 +01:00 [ERR] An unhandled exception has occurred while executing the request.
@@ -289,7 +289,7 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
 2025-01-25 21:29:28.187 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/GoogleSignIn/register - application/json 49
 2025-01-25 21:29:28.225 +01:00 [INF] CORS policy execution successful.
 2025-01-25 21:29:28.249 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
-2025-01-25 21:29:28.302 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
+2025-01-25 21:29:28.302 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.UserGoogleDTO) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
 2025-01-25 21:29:28.315 +01:00 [INF] Executed action Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API) in 5.6096ms
 2025-01-25 21:29:28.318 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
 2025-01-25 21:29:28.320 +01:00 [ERR] An unhandled exception has occurred while executing the request.
@@ -328,7 +328,7 @@ System.InvalidOperationException: Unable to resolve service for type 'Microsoft.
 2025-01-25 21:44:18.555 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/GoogleSignIn/register - application/json 145
 2025-01-25 21:44:18.573 +01:00 [INF] CORS policy execution successful.
 2025-01-25 21:44:18.579 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
-2025-01-25 21:44:18.629 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
+2025-01-25 21:44:18.629 +01:00 [INF] Route matched with {action = "ExternalLogin", controller = "GoogleSignIn"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExternalLogin(Street.Healing.API.RequestsDto.GoogleSignIn.UserGoogleDTO) on controller Street.Healing.API.Controllers.GoogleSignInController (Street.Healing.API).
 2025-01-25 21:44:18.647 +01:00 [INF] Executed action Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API) in 6.9882ms
 2025-01-25 21:44:18.651 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.GoogleSignInController.ExternalLogin (Street.Healing.API)'
 2025-01-25 21:44:18.657 +01:00 [ERR] An unhandled exception has occurred while executing the request.

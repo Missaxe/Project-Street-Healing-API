@@ -2,14 +2,15 @@
 using Street.Healing.API.Helpers;
 using Street.Healing.API.Services;
 using Street.Healing.API.MailStyling;
+using Street.Healing.DAO.Repository;
 
 namespace Street.Healing.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OtpController(IUserServices userServices, IPasswordServices passwordServices, IEmailServices emailServices, ILogger<OtpController> logger) : ControllerBase
+    public class OtpController(IUserRepository userRepository, IPasswordServices passwordServices, IEmailServices emailServices, ILogger<OtpController> logger) : ControllerBase
     {
-        private readonly IUserServices _userServices = userServices;
+        private readonly IUserRepository _userRepository = userRepository;
         private readonly IEmailServices _emailServices = emailServices;
         private readonly IPasswordServices _passwordServices = passwordServices;
         private readonly ILogger<OtpController> _logger = logger;
@@ -26,7 +27,7 @@ namespace Street.Healing.API.Controllers
             try
             {
 
-                string email = await _userServices.GetUserEmailbyIdAsync(id);
+                string email = await _userRepository.GetUserEmailbyIdAsync(id);
                 string otp = _passwordServices.CreateJwt();
                 var htmlMail = new HtmlMail(otp);
                 var message = new Message(

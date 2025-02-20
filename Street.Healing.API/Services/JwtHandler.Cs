@@ -1,11 +1,11 @@
 ﻿using Google.Apis.Auth;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
-using Street.Healing.API.Context.GoogleUser;
-using Street.Healing.API.Context.User;
 using Street.Healing.API.Controllers;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.RequestsDto.GoogleSignIn;
+using Street.Healing.DTO.Models;
+using Street.Healing.DTO.ModelsDTO;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -17,7 +17,7 @@ namespace Street.Healing.API.Services
         private readonly IConfiguration _configuration;
         private readonly IConfigurationSection _jwtSettings;
         private readonly IConfigurationSection _goolgeSettings;
-        private readonly UserManager<GoogleUser> _userManager;
+        private readonly UserManager<UserGoogle> _userManager;
         private readonly ILogger<JwtHandler> _logger;
         public JwtHandler(IConfiguration configuration/*, UserManager<GoogleUser> userManager*/, ILogger<JwtHandler> logger)
         {
@@ -28,7 +28,7 @@ namespace Street.Healing.API.Services
             _goolgeSettings = _configuration.GetSection("GoogleAuthSettings");
         } 
 
-        public async Task<GoogleJsonWebSignature.Payload?> VerifyGoogleToken(ExternalAuthDto externalAuth)
+        public async Task<GoogleJsonWebSignature.Payload?> VerifyGoogleToken(UserGoogleDTO externalAuth)
         {
             try
             {

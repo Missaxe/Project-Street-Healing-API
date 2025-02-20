@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "userObj",
-        "Type": "Street.Healing.API.RequestsDto.User.UserClientDto",
+        "Type": "Street.Healing.DTO.ModelsDTO.UserDTO",
         "IsRequired": true
       }
     ],
@@ -57,7 +57,7 @@
     "Parameters": [
       {
         "Name": "userObj",
-        "Type": "Street.Healing.API.RequestsDto.User.UserClientDto",
+        "Type": "Street.Healing.DTO.ModelsDTO.UserDTO",
         "IsRequired": true
       }
     ],

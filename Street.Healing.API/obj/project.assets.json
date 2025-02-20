@@ -2467,6 +2467,38 @@
             "related": ".xml"
           }
         }
+      },
+      "Street.Healing.DAO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Google.Apis.Auth": "1.69.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
+          "Street.Healing.DTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Street.Healing.DAO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Street.Healing.DAO.dll": {}
+        }
+      },
+      "Street.Healing.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "Microsoft.Extensions.Identity.Stores": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Street.Healing.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Street.Healing.DTO.dll": {}
+        }
       }
     }
   },
@@ -7339,6 +7371,16 @@
         "twilio.7.8.0.nupkg.sha512",
         "twilio.nuspec"
       ]
+    },
+    "Street.Healing.DAO/1.0.0": {
+      "type": "project",
+      "path": "../Street.Healing.DAO/Street.Healing.DAO.csproj",
+      "msbuildProject": "../Street.Healing.DAO/Street.Healing.DAO.csproj"
+    },
+    "Street.Healing.DTO/1.0.0": {
+      "type": "project",
+      "path": "../Street.Healing.DTO/Street.Healing.DTO.csproj",
+      "msbuildProject": "../Street.Healing.DTO/Street.Healing.DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7362,6 +7404,8 @@
       "Serilog.Settings.Configuration >= 9.0.0",
       "Serilog.Sinks.Console >= 6.0.0",
       "Serilog.Sinks.File >= 6.0.0",
+      "Street.Healing.DAO >= 1.0.0",
+      "Street.Healing.DTO >= 1.0.0",
       "Swashbuckle.AspNetCore.SwaggerGen >= 7.2.0",
       "Swashbuckle.AspNetCore.SwaggerUI >= 7.2.0",
       "System.Threading.Tasks >= 4.3.0",
@@ -7399,7 +7443,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DAO\\Street.Healing.DAO.csproj": {
+              "projectPath": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DAO\\Street.Healing.DAO.csproj"
+            },
+            "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DTO\\Street.Healing.DTO.csproj": {
+              "projectPath": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DTO\\Street.Healing.DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

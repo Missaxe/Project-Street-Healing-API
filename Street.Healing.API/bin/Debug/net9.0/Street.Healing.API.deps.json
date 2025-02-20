@@ -27,6 +27,8 @@
           "Serilog.Settings.Configuration": "9.0.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "6.0.0",
+          "Street.Healing.DAO": "1.0.0",
+          "Street.Healing.DTO": "1.0.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "7.2.0",
           "Swashbuckle.AspNetCore.SwaggerUI": "7.2.0",
           "System.Threading.Tasks": "4.3.0",
@@ -1451,6 +1453,34 @@
             "fileVersion": "7.8.0.0"
           }
         }
+      },
+      "Street.Healing.DAO/1.0.0": {
+        "dependencies": {
+          "Google.Apis.Auth": "1.69.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
+          "Street.Healing.DTO": "1.0.0"
+        },
+        "runtime": {
+          "Street.Healing.DAO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Street.Healing.DTO/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "Microsoft.Extensions.Identity.Stores": "9.0.0"
+        },
+        "runtime": {
+          "Street.Healing.DTO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -2376,6 +2406,16 @@
       "sha512": "sha512-GsW+XAwXX1F2YKHoQuO7T73/awAxOskdVgtvsCi6mnHYVq0cffM1CZUQdERmRt9UiCmEvt32sPe7qy/On5TBzg==",
       "path": "twilio/7.8.0",
       "hashPath": "twilio.7.8.0.nupkg.sha512"
+    },
+    "Street.Healing.DAO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Street.Healing.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

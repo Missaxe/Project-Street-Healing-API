@@ -4,11 +4,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Serilog;
-using Street.Healing.API.Context.GoogleUser;
-using Street.Healing.API.Context.User;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.Middlewares;
 using Street.Healing.API.Services;
+using Street.Healing.DAO.Context;
+using Street.Healing.DAO.Repository;
+using Street.Healing.DTO.Models;
 
 namespace Street.Healing.API
 {
@@ -35,7 +36,7 @@ namespace Street.Healing.API
             //Database Configuration
             builder.Services.AddDbContext<UserDbContext>(item =>
             item.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
-            builder.Services.AddDbContext<GoogleUserDbContext>(options =>
+            builder.Services.AddDbContext<UserGoogleDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
 
             //API key Configuration
@@ -50,7 +51,7 @@ namespace Street.Healing.API
 
             //Services Dependency Injection 
 
-            builder.Services.AddScoped<IUserServices, UserServices>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IEmailServices, EmailServices>();
             builder.Services.AddScoped<IPasswordServices, PasswordServices>();
             builder.Services.AddTransient<IJwtHandler, JwtHandler>();
@@ -59,7 +60,7 @@ namespace Street.Healing.API
             builder.Services.AddTransient<RateLimitingMiddleware>();
             builder.Services.AddTransient<JWTTokenMiddleware>();
 
-            builder.Services.AddIdentity<GoogleUser, IdentityRole>(opt =>
+            builder.Services.AddIdentity<UserGoogle, IdentityRole>(opt =>
             {
                 opt.Password.RequiredLength = 7;
                 opt.Password.RequireDigit = false;
@@ -69,7 +70,7 @@ namespace Street.Healing.API
                 opt.Lockout.AllowedForNewUsers = true;
                 opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(2);
                 opt.Lockout.MaxFailedAccessAttempts = 3;
-            }).AddEntityFrameworkStores<GoogleUserDbContext>()
+            }).AddEntityFrameworkStores<UserGoogleDbContext>()
             .AddDefaultTokenProviders();
 
 
