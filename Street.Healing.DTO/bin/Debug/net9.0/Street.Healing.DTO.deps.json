@@ -9,7 +9,8 @@
       "Street.Healing.DTO/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
-          "Microsoft.Extensions.Identity.Stores": "9.0.0"
+          "Microsoft.Extensions.Identity.Stores": "9.0.0",
+          "Street.Healing.DAO": "1.0.0.0"
         },
         "runtime": {
           "Street.Healing.DTO.dll": {}
@@ -144,6 +145,14 @@
             "fileVersion": "9.0.24.52809"
           }
         }
+      },
+      "Street.Healing.DAO/1.0.0.0": {
+        "runtime": {
+          "Street.Healing.DAO.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -236,6 +245,11 @@
       "sha512": "sha512-N3qEBzmLMYiASUlKxxFIISP4AiwuPTHF5uCh+2CWSwwzAJiIYx0kBJsS30cp1nvhSySFAVi30jecD307jV+8Kg==",
       "path": "microsoft.extensions.primitives/9.0.0",
       "hashPath": "microsoft.extensions.primitives.9.0.0.nupkg.sha512"
+    },
+    "Street.Healing.DAO/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

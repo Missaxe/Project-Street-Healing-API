@@ -2,11 +2,7 @@
 using Street.Healing.DAO.Models;
 using Street.Healing.DTO.Helpers;
 using Street.Healing.DTO.ModelsDTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Street.Healing.DTO.Mapping
 {

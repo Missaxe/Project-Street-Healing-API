@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Street.Healing.DTO.Models;
+using Street.Healing.DAO.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
