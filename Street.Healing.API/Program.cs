@@ -1,9 +1,18 @@
 
+using Google;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Street.Healing.API.Context;
+using Serilog;
 using Street.Healing.API.Helpers;
+using Street.Healing.API.Middlewares;
 using Street.Healing.API.Services;
+using Street.Healing.Business.Core.Core.Repository;
+using Street.Healing.Business.Core.Core.Services;
+using Street.Healing.DAO.Context;
+using Street.Healing.DAO.Models;
+using Street.Healing.DAO.Repository;
+
 
 namespace Street.Healing.API
 {
@@ -23,9 +32,20 @@ namespace Street.Healing.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            //logging
+            builder.Host.UseSerilog((context, configuration) =>
+            configuration.ReadFrom.Configuration(context.Configuration));
+
             //Database Configuration
             builder.Services.AddDbContext<UserDbContext>(item =>
             item.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
+            builder.Services.AddDbContext<UserGoogleDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("connectionstring")));
+
+            //API key Configuration
+
+
+
 
             //Add Email Configs
             var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
@@ -34,9 +54,29 @@ namespace Street.Healing.API
 
             //Services Dependency Injection 
 
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IUserServices, UserServices>();
-            builder.Services.AddSingleton<IEmailServices, EmailServices>();
+            builder.Services.AddScoped<IEmailServices, EmailServices>();
             builder.Services.AddScoped<IPasswordServices, PasswordServices>();
+            builder.Services.AddTransient<IJwtHandler, JwtHandler>();
+
+            //Transien for Middleware Request
+            builder.Services.AddTransient<RateLimitingMiddleware>();
+            builder.Services.AddTransient<JWTTokenMiddleware>();
+
+            builder.Services.AddIdentity<UserGoogle, IdentityRole>(opt =>
+            {
+                opt.Password.RequiredLength = 7;
+                opt.Password.RequireDigit = false;
+
+                opt.User.RequireUniqueEmail = true;
+
+                opt.Lockout.AllowedForNewUsers = true;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(2);
+                opt.Lockout.MaxFailedAccessAttempts = 3;
+            }).AddEntityFrameworkStores<UserGoogleDbContext>()
+            .AddDefaultTokenProviders();
+
 
             var app = builder.Build();
 
@@ -54,13 +94,22 @@ namespace Street.Healing.API
             app.UseSwagger();
             app.UseSwaggerUI();
 
+
+
             //Allow Access to Client
             app.UseCors(
-                 builder => builder.AllowAnyOrigin()
+                 builder => builder.WithOrigins()
+                      .AllowAnyOrigin()
                       .AllowAnyMethod()
                       .AllowAnyHeader()
+                    
              );
 
+            //Using API key middleware to validate key from client request 
+
+            app.UseMiddleware<RateLimitingMiddleware>();
+
+            app.UseMiddleware<JWTTokenMiddleware>();
 
             app.MapControllers();
 

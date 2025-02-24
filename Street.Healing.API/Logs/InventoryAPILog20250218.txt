@@ -1,0 +1,287 @@
+2025-02-18 15:09:40.621 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 15:09:41.259 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 15:09:41.263 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 15:09:41.358 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 15:09:41.405 +01:00 [INF] Hosting environment: Development
+2025-02-18 15:09:41.408 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 15:13:32.529 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 15:13:32.608 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:13:32.616 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 93.3712ms
+2025-02-18 15:13:32.621 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 15:13:32.676 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:14:36.594 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 15:14:36.624 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 15:14:38.679 +01:00 [INF] Executed DbCommand (93ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 15:14:38.934 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 15:14:38.946 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 15:14:38.971 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 2336.6828ms
+2025-02-18 15:14:38.974 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 15:14:41.529 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/login/authenticate - 500 null application/json; charset=utf-8 68907.6224ms
+2025-02-18 15:16:19.308 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 15:16:19.709 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 15:16:19.711 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 15:16:19.783 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 15:16:19.785 +01:00 [INF] Hosting environment: Development
+2025-02-18 15:16:19.786 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 15:18:41.164 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 15:18:41.255 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:18:41.261 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 107.578ms
+2025-02-18 15:18:41.269 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 15:18:41.284 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:18:56.755 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 15:18:56.794 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 15:18:58.571 +01:00 [INF] Executed DbCommand (72ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 15:18:58.839 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 15:18:58.857 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 15:18:58.873 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 2069.2222ms
+2025-02-18 15:18:58.885 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 15:19:05.189 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/login/authenticate - 500 null application/json; charset=utf-8 23920.0239ms
+2025-02-18 15:31:19.361 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 15:31:19.784 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 15:31:19.786 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 15:31:19.836 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 15:31:19.839 +01:00 [INF] Hosting environment: Development
+2025-02-18 15:31:19.840 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 15:31:53.973 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 15:31:54.079 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:31:54.090 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 122.1589ms
+2025-02-18 15:31:54.107 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 15:31:54.122 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:33:00.024 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 15:33:00.067 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 15:33:02.090 +01:00 [INF] Executed DbCommand (82ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 15:33:02.414 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 15:33:02.428 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 15:33:02.445 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 2367.9224ms
+2025-02-18 15:33:02.449 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 15:33:56.105 +01:00 [ERR] Exception during the process Invoke in MiddlewareFct : StatusCode cannot be set because the response has already started. 
+2025-02-18 15:33:56.110 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 15:34:07.709 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:34:07.711 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 499 null null 11601.8961ms
+2025-02-18 15:34:07.713 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/login/authenticate - 401 null null 133605.9501ms
+2025-02-18 15:34:53.797 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 15:34:53.803 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:34:53.805 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 7.5669ms
+2025-02-18 15:34:53.807 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 15:34:53.817 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:35:52.827 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 15:35:52.829 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 15:35:52.936 +01:00 [INF] Executed DbCommand (28ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 15:35:53.082 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 15:35:53.085 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 15:35:53.090 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 257.0349ms
+2025-02-18 15:35:53.094 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 15:53:08.322 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 15:53:08.775 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 15:53:08.779 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 15:53:08.843 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 15:53:08.845 +01:00 [INF] Hosting environment: Development
+2025-02-18 15:53:08.847 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 15:54:13.936 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 15:54:14.017 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:54:14.024 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 95.7503ms
+2025-02-18 15:54:14.035 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 15:54:14.053 +01:00 [INF] CORS policy execution successful.
+2025-02-18 15:55:03.802 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 15:55:03.831 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 15:55:05.724 +01:00 [INF] Executed DbCommand (71ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 15:55:06.046 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 15:55:06.060 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 15:55:06.077 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 2232.4017ms
+2025-02-18 15:55:06.082 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 16:11:46.118 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 16:11:46.723 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 16:11:46.727 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 16:11:46.788 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 16:11:46.790 +01:00 [INF] Hosting environment: Development
+2025-02-18 16:11:46.791 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 16:14:49.646 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 16:14:49.756 +01:00 [INF] CORS policy execution successful.
+2025-02-18 16:14:49.766 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 124.7066ms
+2025-02-18 16:14:49.773 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 16:14:49.785 +01:00 [INF] CORS policy execution successful.
+2025-02-18 16:22:15.951 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 16:22:16.390 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 16:22:16.394 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 16:22:16.449 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 16:22:16.452 +01:00 [INF] Hosting environment: Development
+2025-02-18 16:22:16.453 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 16:26:30.136 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 16:26:30.229 +01:00 [INF] CORS policy execution successful.
+2025-02-18 16:26:30.236 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 106.8578ms
+2025-02-18 16:26:30.244 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 16:26:30.254 +01:00 [INF] CORS policy execution successful.
+2025-02-18 16:42:11.738 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 16:42:12.344 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 16:42:12.350 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 16:42:12.423 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 16:42:12.425 +01:00 [INF] Hosting environment: Development
+2025-02-18 16:42:12.426 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 17:07:53.383 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 17:07:53.467 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:07:53.475 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 97.8587ms
+2025-02-18 17:07:53.493 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 17:07:53.503 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:09:34.161 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:09:34.192 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 17:09:35.885 +01:00 [INF] Executed DbCommand (70ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 17:09:36.140 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 17:09:36.155 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 17:09:36.166 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 1962.2556ms
+2025-02-18 17:09:36.170 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:11:42.893 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 17:11:43.381 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 17:11:43.384 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 17:11:43.444 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 17:11:43.446 +01:00 [INF] Hosting environment: Development
+2025-02-18 17:11:43.447 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 17:11:44.816 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 17:11:44.923 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:11:44.930 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 123.475ms
+2025-02-18 17:11:44.968 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 17:11:45.023 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:12:22.476 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:12:22.512 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 17:12:24.344 +01:00 [INF] Executed DbCommand (50ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 17:12:24.619 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 17:12:24.630 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 17:12:24.639 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 2118.8573ms
+2025-02-18 17:12:24.643 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:12:58.823 +01:00 [ERR] Exception during the process Invoke in MiddlewareFct : StatusCode cannot be set because the response has already started. 
+2025-02-18 17:13:01.082 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/login/authenticate - 200 null null 76113.7404ms
+2025-02-18 17:14:59.022 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 17:14:59.468 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 17:14:59.471 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 17:14:59.522 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 17:14:59.523 +01:00 [INF] Hosting environment: Development
+2025-02-18 17:14:59.525 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 17:15:23.233 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 17:15:23.371 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:15:23.381 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 153.5114ms
+2025-02-18 17:15:23.390 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 17:15:23.402 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:16:06.597 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:16:06.626 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 17:16:08.247 +01:00 [INF] Executed DbCommand (57ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 17:16:08.495 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 17:16:08.508 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 17:16:08.518 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 1885.6228ms
+2025-02-18 17:16:08.523 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:19:19.708 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 17:19:20.227 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 17:19:20.229 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 17:19:20.293 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 17:19:20.295 +01:00 [INF] Hosting environment: Development
+2025-02-18 17:19:20.299 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 17:21:22.009 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 17:21:22.080 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:21:22.086 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 84.0288ms
+2025-02-18 17:21:22.093 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 17:21:22.167 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:21:28.880 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 17:21:36.214 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:21:51.873 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:22:06.541 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:22:06.552 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 17:22:06.552 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 17:22:08.425 +01:00 [INF] Executed DbCommand (54ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 17:22:08.425 +01:00 [INF] Executed DbCommand (54ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 17:22:08.776 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 17:22:08.776 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 17:22:08.789 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 17:22:08.789 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 17:22:08.800 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 2236.2177ms
+2025-02-18 17:22:08.800 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 2237.8647ms
+2025-02-18 17:22:08.806 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:22:08.807 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:24:48.824 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 17:24:49.290 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 17:24:49.293 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 17:24:49.360 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 17:24:49.362 +01:00 [INF] Hosting environment: Development
+2025-02-18 17:24:49.364 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 17:25:04.792 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 17:25:04.870 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:25:04.877 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 93.4847ms
+2025-02-18 17:25:04.884 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 17:25:04.895 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:25:09.241 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:25:09.271 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 17:25:11.080 +01:00 [INF] Executed DbCommand (73ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 17:25:11.394 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 17:25:11.405 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 17:25:11.413 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 2132.0793ms
+2025-02-18 17:25:11.416 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:25:11.571 +01:00 [ERR] Exception during the process Invoke in MiddlewareFct : StatusCode cannot be set because the response has already started. 
+2025-02-18 17:25:11.588 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/login/authenticate - 200 null null 6703.9696ms
+2025-02-18 17:25:25.228 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 17:25:25.237 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:25:25.240 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 11.5419ms
+2025-02-18 17:25:25.242 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 17:25:25.252 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:25:49.127 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:25:49.142 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 17:25:49.273 +01:00 [INF] Executed DbCommand (99ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 17:25:49.405 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 17:25:49.408 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 17:25:49.412 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 265.1136ms
+2025-02-18 17:25:49.415 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:27:33.978 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-18 17:27:34.425 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-18 17:27:34.427 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-18 17:27:34.476 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-18 17:27:34.478 +01:00 [INF] Hosting environment: Development
+2025-02-18 17:27:34.480 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API
+2025-02-18 17:27:54.155 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - null null
+2025-02-18 17:27:54.231 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:27:54.237 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7066/api/login/authenticate - 204 null null 87.4222ms
+2025-02-18 17:27:54.245 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/login/authenticate - application/json 132
+2025-02-18 17:27:54.254 +01:00 [INF] CORS policy execution successful.
+2025-02-18 17:28:10.838 +01:00 [INF] Executing endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:28:10.865 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(Street.Healing.API.RequestsDto.User.UserClientDto) on controller Street.Healing.API.Controllers.LoginController (Street.Healing.API).
+2025-02-18 17:28:12.651 +01:00 [INF] Executed DbCommand (66ms) [Parameters=[@__userEmail_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateCreated], [u].[Email], [u].[FirstName], [u].[HashPassword], [u].[LastName], [u].[PhoneNumber], [u].[SaltPassword]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__userEmail_0
+2025-02-18 17:28:12.914 +01:00 [ERR] Exception during the process of login user in Authenticate : Value cannot be null. (Parameter 'logger') 
+2025-02-18 17:28:12.925 +01:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-18 17:28:12.933 +01:00 [INF] Executed action Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API) in 2059.4851ms
+2025-02-18 17:28:12.939 +01:00 [INF] Executed endpoint 'Street.Healing.API.Controllers.LoginController.Authenticate (Street.Healing.API)'
+2025-02-18 17:28:42.866 +01:00 [ERR] Exception during the process Invoke in MiddlewareFct : StatusCode cannot be set because the response has already started. 
+2025-02-18 17:28:42.904 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/login/authenticate - 401 null null 48658.6574ms

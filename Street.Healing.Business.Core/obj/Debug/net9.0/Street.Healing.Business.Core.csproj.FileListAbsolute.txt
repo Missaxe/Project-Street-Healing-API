@@ -1,0 +1,16 @@
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\bin\Debug\net9.0\Street.Healing.Business.Core.deps.json
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\bin\Debug\net9.0\Street.Healing.Business.Core.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\bin\Debug\net9.0\Street.Healing.Business.Core.pdb
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\Street.Healing.Business.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\Street.Healing.Business.Core.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\Street.Healing.Business.Core.AssemblyInfo.cs
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\Street.Healing.Business.Core.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\Street.Healing.Business.Core.sourcelink.json
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\Street.Healing.Business.Core.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\refint\Street.Healing.Business.Core.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\Street.Healing.Business.Core.pdb
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\ref\Street.Healing.Business.Core.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\bin\Debug\net9.0\Street.Healing.DAO.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\bin\Debug\net9.0\Street.Healing.DAO.pdb
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\Street.Healing.Business.Core.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.Business.Core\obj\Debug\net9.0\Street.H.F204D21D.Up2Date

@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("791689a8-288a-4d1c-9720-341d6b7f85e8")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Street.Healing.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86633571fdd9fc0e6f04bee2f55dfd0af2b1fc6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad636a1189b79cffa2213636ff527be38584703c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Street.Healing.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Street.Healing.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

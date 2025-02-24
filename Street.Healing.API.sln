@@ -1,9 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Street.Healing.API", "Street.Healing.API\Street.Healing.API.csproj", "{82056AD7-698F-414E-A7C8-551F577E1DAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DTO", "DTO", "{A5961A9B-6EBE-46F8-9275-3C793D712E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Street.Healing.DTO", "Street.Healing.DTO\Street.Healing.DTO.csproj", "{321E2B7E-55C6-48CE-BD16-B358D1E0C93B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAO", "DAO", "{3A3036D9-C6FF-4A05-AE0C-7BFA5B7A18CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Street.Healing.DAO", "Street.Healing.DAO\Street.Healing.DAO.csproj", "{64980FE8-3E43-4BB7-8A16-EAEE6D8FAD49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A5207A71-AA42-4A03-90B0-425C6E23B252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Street.Healing.Business.Core", "Street.Healing.Business.Core\Street.Healing.Business.Core.csproj", "{9C4C5E99-F193-40E7-BE57-D92A30ADEAAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tech", "Tech", "{BF289EC0-4539-4DAC-BA99-923CA9114DEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Street.Healing.Business.Tech", "Street.Healing.Business.Tech\Street.Healing.Business.Tech.csproj", "{1D258187-C671-42B5-8F8D-42265A2402CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{66D5EE24-CEB1-4F22-B881-3342BA095508}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +33,31 @@ Global
 		{82056AD7-698F-414E-A7C8-551F577E1DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82056AD7-698F-414E-A7C8-551F577E1DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82056AD7-698F-414E-A7C8-551F577E1DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{321E2B7E-55C6-48CE-BD16-B358D1E0C93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{321E2B7E-55C6-48CE-BD16-B358D1E0C93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{321E2B7E-55C6-48CE-BD16-B358D1E0C93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{321E2B7E-55C6-48CE-BD16-B358D1E0C93B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64980FE8-3E43-4BB7-8A16-EAEE6D8FAD49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64980FE8-3E43-4BB7-8A16-EAEE6D8FAD49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64980FE8-3E43-4BB7-8A16-EAEE6D8FAD49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64980FE8-3E43-4BB7-8A16-EAEE6D8FAD49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4C5E99-F193-40E7-BE57-D92A30ADEAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4C5E99-F193-40E7-BE57-D92A30ADEAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4C5E99-F193-40E7-BE57-D92A30ADEAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4C5E99-F193-40E7-BE57-D92A30ADEAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D258187-C671-42B5-8F8D-42265A2402CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D258187-C671-42B5-8F8D-42265A2402CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D258187-C671-42B5-8F8D-42265A2402CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D258187-C671-42B5-8F8D-42265A2402CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82056AD7-698F-414E-A7C8-551F577E1DAD} = {66D5EE24-CEB1-4F22-B881-3342BA095508}
+		{321E2B7E-55C6-48CE-BD16-B358D1E0C93B} = {A5961A9B-6EBE-46F8-9275-3C793D712E2B}
+		{64980FE8-3E43-4BB7-8A16-EAEE6D8FAD49} = {3A3036D9-C6FF-4A05-AE0C-7BFA5B7A18CE}
+		{9C4C5E99-F193-40E7-BE57-D92A30ADEAAA} = {A5207A71-AA42-4A03-90B0-425C6E23B252}
+		{1D258187-C671-42B5-8F8D-42265A2402CE} = {BF289EC0-4539-4DAC-BA99-923CA9114DEC}
 	EndGlobalSection
 EndGlobal
