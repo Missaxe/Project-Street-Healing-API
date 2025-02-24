@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Street.Healing.DTO.Models
+namespace Street.Healing.DAO.Models
 {
     public class UserGoogle : IdentityUser
     {

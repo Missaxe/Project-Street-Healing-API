@@ -15,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Street.Healing.DTO\Street.Healing.DTO.csproj" />
+    <Reference Include="Street.Healing.DTO">
+      <HintPath>..\Street.Healing.DTO\bin\Debug\net9.0\Street.Healing.DTO.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

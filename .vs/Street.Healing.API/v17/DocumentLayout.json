@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|c:\\users\\hp\\source\\repos\\project-street-healing-api\\street.healing.api\\services\\passwordservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|solutionrelative:street.healing.api\\services\\passwordservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|c:\\users\\hp\\source\\repos\\project-street-healing-api\\street.healing.api\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|solutionrelative:street.healing.api\\controllers\\signupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|c:\\users\\hp\\source\\repos\\project-street-healing-api\\street.healing.api\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|solutionrelative:street.healing.api\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|c:\\users\\hp\\source\\repos\\project-street-healing-api\\street.healing.api\\services\\jwthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|solutionrelative:street.healing.api\\services\\jwthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|c:\\users\\hp\\source\\repos\\project-street-healing-api\\street.healing.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82056AD7-698F-414E-A7C8-551F577E1DAD}|Street.Healing.API\\Street.Healing.API.csproj|solutionrelative:street.healing.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64980FE8-3E43-4BB7-8A16-EAEE6D8FAD49}|Street.Healing.DAO\\Street.Healing.DAO.csproj|c:\\users\\hp\\source\\repos\\project-street-healing-api\\street.healing.dao\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64980FE8-3E43-4BB7-8A16-EAEE6D8FAD49}|Street.Healing.DAO\\Street.Healing.DAO.csproj|solutionrelative:street.healing.dao\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321E2B7E-55C6-48CE-BD16-B358D1E0C93B}|Street.Healing.DTO\\Street.Healing.DTO.csproj|c:\\users\\hp\\source\\repos\\project-street-healing-api\\street.healing.dto\\mapping\\usermapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{321E2B7E-55C6-48CE-BD16-B358D1E0C93B}|Street.Healing.DTO\\Street.Healing.DTO.csproj|solutionrelative:street.healing.dto\\mapping\\usermapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,20 +30,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EmailServices.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\EmailServices.cs",
-              "RelativeDocumentMoniker": "Street.Healing.API\\Services\\EmailServices.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\EmailServices.cs",
-              "RelativeToolTip": "Street.Healing.API\\Services\\EmailServices.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAkwDYAAAAfAAAAAAAAAA==",
+              "Title": "JwtHandler.Cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\JwtHandler.Cs",
+              "RelativeDocumentMoniker": "Street.Healing.API\\Services\\JwtHandler.Cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\JwtHandler.Cs",
+              "RelativeToolTip": "Street.Healing.API\\Services\\JwtHandler.Cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAApwBMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T14:55:17.184Z",
-              "IsPinned": true
+              "WhenOpened": "2025-02-24T10:21:54.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Program.cs",
+              "RelativeDocumentMoniker": "Street.Healing.API\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Program.cs",
+              "RelativeToolTip": "Street.Healing.API\\Program.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T10:21:36.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DAO\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Street.Healing.DAO\\Repository\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DAO\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "Street.Healing.DAO\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T10:21:23.184Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -44,14 +82,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PasswordServices.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\PasswordServices.cs",
-              "RelativeDocumentMoniker": "Street.Healing.API\\Services\\PasswordServices.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\PasswordServices.cs",
-              "RelativeToolTip": "Street.Healing.API\\Services\\PasswordServices.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Title": "SignUpController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Controllers\\SignUpController.cs",
+              "RelativeDocumentMoniker": "Street.Healing.API\\Controllers\\SignUpController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Controllers\\SignUpController.cs",
+              "RelativeToolTip": "Street.Healing.API\\Controllers\\SignUpController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T17:33:42.193Z",
+              "WhenOpened": "2025-02-24T10:20:56.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserMapperConfig.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DTO\\Mapping\\UserMapperConfig.cs",
+              "RelativeDocumentMoniker": "Street.Healing.DTO\\Mapping\\UserMapperConfig.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DTO\\Mapping\\UserMapperConfig.cs",
+              "RelativeToolTip": "Street.Healing.DTO\\Mapping\\UserMapperConfig.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T10:20:34.864Z",
               "EditorCaption": ""
             }
           ]

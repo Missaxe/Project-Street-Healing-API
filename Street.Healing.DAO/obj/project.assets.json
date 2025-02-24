@@ -2,22 +2,6 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "AutoMapper/13.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Options": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/AutoMapper.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/AutoMapper.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -1190,39 +1174,10 @@
             "rid": "win"
           }
         }
-      },
-      "Street.Healing.DTO/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "AutoMapper": "13.0.1",
-          "Microsoft.Extensions.Identity.Stores": "9.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Street.Healing.DTO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Street.Healing.DTO.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "AutoMapper/13.0.1": {
-      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
-      "type": "package",
-      "path": "automapper/13.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "automapper.13.0.1.nupkg.sha512",
-        "automapper.nuspec",
-        "icon.png",
-        "lib/net6.0/AutoMapper.dll",
-        "lib/net6.0/AutoMapper.xml"
-      ]
-    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -3211,11 +3166,6 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "Street.Healing.DTO/1.0.0": {
-      "type": "project",
-      "path": "../Street.Healing.DTO/Street.Healing.DTO.csproj",
-      "msbuildProject": "../Street.Healing.DTO/Street.Healing.DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3224,8 +3174,7 @@
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Relational >= 9.0.0",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
-      "Street.Healing.DTO >= 1.0.0"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0"
     ]
   },
   "packageFolders": {
@@ -3259,11 +3208,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DTO\\Street.Healing.DTO.csproj": {
-              "projectPath": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.DTO\\Street.Healing.DTO.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

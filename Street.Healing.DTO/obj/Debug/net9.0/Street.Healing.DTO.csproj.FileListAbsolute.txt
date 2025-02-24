@@ -11,3 +11,6 @@ C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.DTO\obj\Debug
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.DTO\obj\Debug\net9.0\refint\Street.Healing.DTO.dll
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.DTO\obj\Debug\net9.0\Street.Healing.DTO.pdb
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.DTO\obj\Debug\net9.0\ref\Street.Healing.DTO.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.DTO\bin\Debug\net9.0\Street.Healing.DAO.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.DTO\bin\Debug\net9.0\Street.Healing.DAO.pdb
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.DTO\obj\Debug\net9.0\Street.H.1F86CFA2.Up2Date

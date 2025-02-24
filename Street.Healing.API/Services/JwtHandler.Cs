@@ -4,7 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using Street.Healing.API.Controllers;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.RequestsDto.GoogleSignIn;
-using Street.Healing.DTO.Models;
+using Street.Healing.DAO.Models;
 using Street.Healing.DTO.ModelsDTO;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -15,16 +15,16 @@ namespace Street.Healing.API.Services
     public class JwtHandler : IJwtHandler
     {
         private readonly IConfiguration _configuration;
-        private readonly IConfigurationSection _jwtSettings;
+        //private readonly IConfigurationSection _jwtSettings;
         private readonly IConfigurationSection _goolgeSettings;
-        private readonly UserManager<UserGoogle> _userManager;
+        //private readonly UserManager<UserGoogle> _userManager;
         private readonly ILogger<JwtHandler> _logger;
         public JwtHandler(IConfiguration configuration/*, UserManager<GoogleUser> userManager*/, ILogger<JwtHandler> logger)
         {
             _logger = logger;
             //_userManager = userManager;
             _configuration = configuration;
-            _jwtSettings = _configuration.GetSection("JwtSettings");
+            //_jwtSettings = _configuration.GetSection("JwtSettings");
             _goolgeSettings = _configuration.GetSection("GoogleAuthSettings");
         } 
 
@@ -34,7 +34,7 @@ namespace Street.Healing.API.Services
             {
                 var settings = new GoogleJsonWebSignature.ValidationSettings()
                 {
-                    Audience = new List<string>() { _goolgeSettings.GetSection("clientId").Value ?? string.Empty }
+                    Audience = [_goolgeSettings.GetSection("clientId").Value ?? string.Empty]
                 };
 
                 var payload = await GoogleJsonWebSignature.ValidateAsync(externalAuth.IdToken, settings);

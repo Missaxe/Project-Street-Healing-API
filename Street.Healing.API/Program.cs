@@ -8,8 +8,9 @@ using Street.Healing.API.Helpers;
 using Street.Healing.API.Middlewares;
 using Street.Healing.API.Services;
 using Street.Healing.DAO.Context;
+using Street.Healing.DAO.Models;
 using Street.Healing.DAO.Repository;
-using Street.Healing.DTO.Models;
+
 
 namespace Street.Healing.API
 {

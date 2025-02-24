@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using Street.Healing.DAO.Models;
 using Street.Healing.DTO.Helpers;
-using Street.Healing.DTO.Models;
 using Street.Healing.DTO.ModelsDTO;
 using System;
 using System.Collections.Generic;

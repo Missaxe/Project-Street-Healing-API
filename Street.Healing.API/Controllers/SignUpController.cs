@@ -1,14 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 using Street.Healing.API.Helpers;
-using Street.Healing.API.MailStyling;
-using Street.Healing.API.Services;
+using Street.Healing.DAO.Models;
 using Street.Healing.DAO.Repository;
 using Street.Healing.DTO.Mapping;
-using Street.Healing.DTO.Models;
 using Street.Healing.DTO.ModelsDTO;
-using System.Collections;
-using static Street.Healing.API.Services.PasswordServices;
 
 namespace Street.Healing.API.Controllers
 {

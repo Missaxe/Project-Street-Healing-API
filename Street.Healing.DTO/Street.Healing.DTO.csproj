@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Street.Healing.DAO">
+      <HintPath>..\Street.Healing.DAO\bin\Debug\net9.0\Street.Healing.DAO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
