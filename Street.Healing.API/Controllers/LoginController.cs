@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.Services;
+using Street.Healing.Business.Core.Core.Repository;
+using Street.Healing.Business.Core.Core.Services;
 using Street.Healing.DAO.Repository;
 using Street.Healing.DTO.ModelsDTO;
 
@@ -8,9 +10,9 @@ namespace Street.Healing.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class LoginController(IUserRepository userRepository, IPasswordServices passwordServices, ILogger<LoginController> logger) : ControllerBase
+    public class LoginController(IUserServices userServices, IPasswordServices passwordServices, ILogger<LoginController> logger) : ControllerBase
     {
-        private readonly IUserRepository _userRepository = userRepository;
+        private readonly IUserServices _userServices = userServices;
         private readonly IPasswordServices _passwordServices = passwordServices;
         private readonly ILogger<LoginController> _logger = logger;
 
@@ -27,7 +29,7 @@ namespace Street.Healing.API.Controllers
                 if (userObj == null)
                     return BadRequest();
 
-                var user = await _userRepository.GetUserAsync(userObj.Email);
+                var user = await _userServices.GetUserAsync(userObj.Email);
 
                 if (user == null)
                     return NotFound(new { Message = ConstMessages.UserNotFound });

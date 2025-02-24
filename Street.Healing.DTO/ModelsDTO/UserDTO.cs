@@ -58,5 +58,10 @@ namespace Street.Healing.DTO.ModelsDTO
         /// User's date creation
         /// </summary>
         public DateTime DateCreated { get; set; }
+
+        /// <summary>
+        /// HashedPass
+        /// </summary>
+        public Tuple<string, string>? HashedPass { get; set; }
     }
 }

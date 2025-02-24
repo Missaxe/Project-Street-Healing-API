@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Street.Healing.DAO.Models;
-using Street.Healing.DTO.Helpers;
 using Street.Healing.DTO.ModelsDTO;
 
 
@@ -20,13 +19,15 @@ namespace Street.Healing.DTO.Mapping
                     .ForMember(dest => dest.PhoneNumber, act => act.MapFrom(src => src.PhoneNumber))
                     .ForMember(dest => dest.Email, act => act.MapFrom(src => src.Email))
                     .ForMember(dest => dest.DateCreated, act => act.MapFrom(src => src.DateCreated))
-                    .AfterMap((src, dest) =>
-                    {
-                        // Generate hash and salt once and assign to respective properties
-                        var hashSalt = PasswordHash.GenerateSaltedHash(64, src.Password);
-                        dest.HashPassword = hashSalt.Item1;
-                        dest.SaltPassword = hashSalt.Item2;
-                    });
+                    .ForMember(dest => dest.HashPassword, act => act.MapFrom(src => src.HashedPass.Item1))
+                    .ForMember(dest => dest.SaltPassword, act => act.MapFrom(src => src.HashedPass.Item2));
+                    //.AfterMap((src, dest) =>
+                    //{
+                    //    // Generate hash and salt once and assign to respective properties
+                    //    var hashSalt = PasswordHash.GenerateSaltedHash(64, src.Password);
+                    //    dest.HashPassword = hashSalt.Item1;
+                    //    dest.SaltPassword = hashSalt.Item2;
+                    //});
             });
 
             // Create an Instance of Mapper and return that Instance

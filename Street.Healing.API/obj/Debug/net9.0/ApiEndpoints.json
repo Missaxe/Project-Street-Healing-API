@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "externalAuth",
-        "Type": "Street.Healing.API.RequestsDto.GoogleSignIn.ExternalAuthDto",
+        "Type": "Street.Healing.DTO.ModelsDTO.UserGoogleDTO",
         "IsRequired": true
       }
     ],

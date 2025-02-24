@@ -7,6 +7,8 @@ using Serilog;
 using Street.Healing.API.Helpers;
 using Street.Healing.API.Middlewares;
 using Street.Healing.API.Services;
+using Street.Healing.Business.Core.Core.Repository;
+using Street.Healing.Business.Core.Core.Services;
 using Street.Healing.DAO.Context;
 using Street.Healing.DAO.Models;
 using Street.Healing.DAO.Repository;
@@ -53,6 +55,7 @@ namespace Street.Healing.API
             //Services Dependency Injection 
 
             builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IUserServices, UserServices>();
             builder.Services.AddScoped<IEmailServices, EmailServices>();
             builder.Services.AddScoped<IPasswordServices, PasswordServices>();
             builder.Services.AddTransient<IJwtHandler, JwtHandler>();

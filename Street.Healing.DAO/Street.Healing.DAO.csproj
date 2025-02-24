@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Street.Healing.DTO">
-      <HintPath>..\Street.Healing.DTO\bin\Debug\net9.0\Street.Healing.DTO.dll</HintPath>
+    <Reference Include="Street.Healing.Business.Core">
+      <HintPath>..\Street.Healing.Business.Core\bin\Debug\net9.0\Street.Healing.Business.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 

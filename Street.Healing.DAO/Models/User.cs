@@ -23,8 +23,6 @@ namespace Street.Healing.DAO.Models
         /// </summary>
         public required string LastName { get; set; }
 
-
-
         /// <summary>
         /// User's phone Number
         /// </summary>
@@ -44,7 +42,6 @@ namespace Street.Healing.DAO.Models
         /// User's salt password
         /// </summary>
         public required string SaltPassword { get; set; }
-
 
         /// <summary>
         /// User's date creation

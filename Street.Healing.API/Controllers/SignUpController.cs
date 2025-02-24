@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using Street.Healing.API.Helpers;
+using Street.Healing.Business.Core.Core.Repository;
+using Street.Healing.Business.Core.Core.Services;
 using Street.Healing.DAO.Models;
 using Street.Healing.DAO.Repository;
 using Street.Healing.DTO.Mapping;
@@ -9,10 +12,10 @@ namespace Street.Healing.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SignUpController(IUserRepository userRepository, ILogger<SignUpController> logger) : ControllerBase
+    public class SignUpController(IUserServices userServices, ILogger<SignUpController> logger) : ControllerBase
     {
   
-        private readonly IUserRepository _userRepository = userRepository;
+        private readonly IUserServices _userServices = userServices;
         private readonly ILogger<SignUpController> _logger = logger;
 
 
@@ -30,7 +33,7 @@ namespace Street.Healing.API.Controllers
                     return BadRequest(new { Message = ConstMessages.EmptyUserObj });
 
                 // check email
-                if (await _userRepository.CheckEmailExistAsync(userObj.Email))
+                if (await _userServices.CheckIfEmailExistAsync(userObj.Email))
                     return BadRequest(new { Message = ConstMessages.EmailAlreadyExists });
 
                 if (string.IsNullOrEmpty(userObj.Password))
@@ -40,24 +43,39 @@ namespace Street.Healing.API.Controllers
                 if (!string.Equals(userObj.Password, userObj.ConfirmPassword))
                     return BadRequest(new { Message = ConstMessages.PasswordsNotTheSame });
 
-                var passMessage = DataValidators.IsPasswordValid(userObj.Password);
+                bool IsPasswordValid = DataValidators.IsPasswordValid(userObj.Password);
 
                 userObj.IsEmailValid = DataValidators.IsValidEmail(userObj.Email);
-                userObj.DateCreated = DateTime.Now;
 
-                //Map from UserRequest to User
-                var mapper = UserMapperConfig.InitializeAutomapper();
-                var userObject = mapper.Map<User>(userObj);
-
-                //Add user into database 
-                await _userRepository.AddUserAsync(userObject);
-
-                return Ok(new
+                if(IsPasswordValid && userObj.IsEmailValid)
                 {
-                    Status = 200,
-                    Message = ConstMessages.UserAdded,
-                    userObject.Id
+                    userObj.DateCreated = DateTime.Now;
+
+                    //Generate Tuple of Hash/Salt Passwords
+                    userObj.HashedPass = PasswordHash.GenerateSaltedHash(64, userObj.Password);
+
+                    //Map from UserRequest to User
+                    var mapper = UserMapperConfig.InitializeAutomapper();
+                    var userObject = mapper.Map<User>(userObj);
+
+                    //Add user into database 
+                    await _userServices.AddUserAsync(userObject);
+
+                    return Ok(new
+                    {
+                        Status = 200,
+                        Message = ConstMessages.UserAdded,
+                        userObject.Id
+                    });
+                }
+
+                return Unauthorized(new
+                {
+                    Status = StatusCodes.Status401Unauthorized,
+                    Message = ConstMessages.Unauthorized
+                  
                 });
+
             }
             catch (Exception ex)
             {

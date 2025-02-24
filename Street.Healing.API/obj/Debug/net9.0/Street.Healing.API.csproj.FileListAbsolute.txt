@@ -184,13 +184,6 @@ C:\Users\hp\source\repos\Street.Healing.API\Street.Healing.API\obj\Debug\net9.0\
 C:\Users\hp\source\repos\Street.Healing.API\Street.Healing.API\obj\Debug\net9.0\ref\Street.Healing.API.dll
 C:\Users\hp\source\repos\Street.Healing.API\Street.Healing.API\bin\Debug\net9.0\Google.Authenticator.dll
 C:\Users\hp\source\repos\Street.Healing.API\Street.Healing.API\bin\Debug\net9.0\QRCoder.dll
-C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.csproj.AssemblyReference.cache
-C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.AssemblyInfoInputs.cache
-C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.AssemblyInfo.cs
-C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.csproj.CoreCompileInputs.cache
-C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.sourcelink.json
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\appsettings.json
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\libman.json
@@ -355,6 +348,14 @@ C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\Street.Healing.DTO.dll
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\Street.Healing.DAO.pdb
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\Street.Healing.DTO.pdb
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.AssemblyInfo.cs
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.sourcelink.json
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\scopedcss\bundle\Street.Healing.API.styles.css
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\staticwebassets.development.json
@@ -372,3 +373,7 @@ C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.pdb
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.genruntimeconfig.cache
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\ref\Street.Healing.API.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\Street.Healing.Business.Core.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\Street.Healing.Business.Tech.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\Street.Healing.Business.Core.pdb
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\bin\Debug\net9.0\Street.Healing.Business.Tech.pdb

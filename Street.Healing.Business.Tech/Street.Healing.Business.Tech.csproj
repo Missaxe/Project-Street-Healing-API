@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.69.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Street.Healing.API\Street.Healing.API.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Street.Healing.DAO">
+      <HintPath>..\Street.Healing.DAO\bin\Debug\net9.0\Street.Healing.DAO.dll</HintPath>
+    </Reference>
+    <Reference Include="Street.Healing.DTO">
+      <HintPath>..\Street.Healing.DTO\bin\Debug\net9.0\Street.Healing.DTO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
