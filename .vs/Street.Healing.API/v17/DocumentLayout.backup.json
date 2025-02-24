@@ -158,6 +158,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T14:55:17.184Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Street.Healing.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Street.Healing.API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAgwGgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T15:39:54.414Z",
 =======
               "Title": "SignUpController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Controllers\\SignUpController.cs",
@@ -167,19 +179,35 @@
               "ViewState": "AgIAACYAAAAAAAAAAAAIwDYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T10:20:56.614Z",
+>>>>>>> feature/V-1-1-0-signup-component
               "IsPinned": true,
               "EditorCaption": ""
->>>>>>> feature/V-1-1-0-signup-component
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "IUserServices.cs",
+<<<<<<< HEAD
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\IUserServices.cs",
+              "RelativeDocumentMoniker": "Street.Healing.API\\Services\\IUserServices.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\IUserServices.cs",
+              "RelativeToolTip": "Street.Healing.API\\Services\\IUserServices.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAewA4AAAAvAAAAAAAAAA==",
+=======
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.Business.Core\\Core.Services\\IUserServices.cs",
               "RelativeDocumentMoniker": "Street.Healing.Business.Core\\Core.Services\\IUserServices.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.Business.Core\\Core.Services\\IUserServices.cs",
               "RelativeToolTip": "Street.Healing.Business.Core\\Core.Services\\IUserServices.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAMwBMAAAAxAAAAAAAAAA==",
+>>>>>>> feature/V-1-1-0-signup-component
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T16:08:28.886Z",
               "IsPinned": true,
@@ -224,12 +252,21 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "Street.Healing.API\\Services\\UserServices.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\UserServices.cs",
+              "RelativeToolTip": "Street.Healing.API\\Services\\UserServices.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCwAAAAGAAAAAAAAAA==",
+=======
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Program.cs",
               "RelativeDocumentMoniker": "Street.Healing.API\\Program.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Program.cs",
               "RelativeToolTip": "Street.Healing.API\\Program.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAQwDgAAAAMAAAAAAAAAA==",
+>>>>>>> feature/V-1-1-0-signup-component
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T10:21:36.474Z",
               "EditorCaption": ""
@@ -237,21 +274,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< HEAD
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Street.Healing.API\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Street.Healing.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAgwG8AAAAnAAAAAAAAAA==",
-=======
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Street.Healing.API\\Controllers\\LoginController.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Street.Healing.API\\Controllers\\LoginController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
->>>>>>> feature/V-1-1-0-signup-component
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T16:04:01.001Z",
               "EditorCaption": ""
@@ -259,28 +287,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-<<<<<<< HEAD
-              "Title": "IUserServices.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\IUserServices.cs",
-              "RelativeDocumentMoniker": "Street.Healing.API\\Services\\IUserServices.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\IUserServices.cs",
-              "RelativeToolTip": "Street.Healing.API\\Services\\IUserServices.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAewA4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:48:25.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserServices.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\UserServices.cs",
-              "RelativeDocumentMoniker": "Street.Healing.API\\Services\\UserServices.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\UserServices.cs",
-              "RelativeToolTip": "Street.Healing.API\\Services\\UserServices.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCwAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T16:39:12.052Z"
-=======
               "Title": "DataValidators.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.Business.Tech\\Helpers\\DataValidators.cs",
               "RelativeDocumentMoniker": "Street.Healing.Business.Tech\\Helpers\\DataValidators.cs",
@@ -290,7 +296,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T16:37:10.28Z",
               "EditorCaption": ""
->>>>>>> feature/V-1-1-0-signup-component
             },
             {
               "$type": "Document",
@@ -302,8 +307,6 @@
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\Services\\PasswordServices.cs",
               "RelativeToolTip": "Street.Healing.API\\Services\\PasswordServices.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAYwEgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T17:33:42.193Z"
 =======
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.API\\appsettings.json",
@@ -324,6 +327,7 @@
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Project-Street-Healing-API\\Street.Healing.Business.Tech\\Helpers\\PasswordHash.cs",
               "RelativeToolTip": "Street.Healing.Business.Tech\\Helpers\\PasswordHash.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+>>>>>>> feature/V-1-1-0-signup-component
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T16:37:26.875Z",
               "EditorCaption": ""
@@ -574,7 +578,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T10:34:30.133Z",
               "EditorCaption": ""
->>>>>>> feature/V-1-1-0-signup-component
             }
           ]
         }
