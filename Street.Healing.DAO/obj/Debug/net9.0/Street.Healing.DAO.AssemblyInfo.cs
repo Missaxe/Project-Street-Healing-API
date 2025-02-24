@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Street.Healing.DAO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b8ff9e058ee92e058338c2ffe57238cd2e81368")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f4048f2ac8f3a7f99502e403b2996874d04ade0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Street.Healing.DAO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Street.Healing.DAO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
