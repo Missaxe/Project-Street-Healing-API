@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Street.Healing.API.Controllers;
-using Street.Healing.API.Helpers;
+using Street.Healing.Business.Tech.Helpers;
 
 namespace Street.Healing.API.Middlewares
 {

@@ -1,8 +1,7 @@
 ﻿using Google.Apis.Auth;
-using Street.Healing.API.RequestsDto.GoogleSignIn;
 using Street.Healing.DTO.ModelsDTO;
 
-namespace Street.Healing.API.Services
+namespace Street.Healing.Business.Tech.Tech.Services
 {
     public interface IJwtHandler
     {

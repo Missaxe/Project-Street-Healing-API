@@ -1,6 +1,6 @@
 ﻿using static System.Net.WebRequestMethods;
 
-namespace Street.Healing.API.MailStyling
+namespace Street.Healing.Business.Tech.MailStyling
 {
     public class HtmlMail
     {

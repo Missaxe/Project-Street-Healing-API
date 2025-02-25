@@ -1,4 +1,4 @@
-﻿namespace Street.Healing.API.RequestsDto.GoogleSignIn
+﻿namespace Street.Healing.Business.Tech.Helpers
 {
     public class AuthResponseDto
     {

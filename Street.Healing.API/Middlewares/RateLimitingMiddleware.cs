@@ -1,4 +1,4 @@
-﻿using Street.Healing.API.Helpers;
+﻿using Street.Healing.Business.Tech.Helpers;
 using System.Collections.Concurrent;
 
 namespace Street.Healing.API.Middlewares

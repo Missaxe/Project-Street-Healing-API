@@ -3,16 +3,14 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using Street.Healing.API.Controllers;
-using Street.Healing.API.Helpers;
-using Street.Healing.API.RequestsDto.GoogleSignIn;
+using Street.Healing.Business.Tech.Helpers;
 using Street.Healing.DAO.Models;
 using Street.Healing.DTO.ModelsDTO;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Street.Healing.API.Services
+namespace Street.Healing.Business.Tech.Tech.Services
 {
     public class JwtHandler : IJwtHandler
     {

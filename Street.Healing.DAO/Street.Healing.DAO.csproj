@@ -14,10 +14,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="Street.Healing.Business.Core">
-      <HintPath>..\Street.Healing.Business.Core\bin\Debug\net9.0\Street.Healing.Business.Core.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

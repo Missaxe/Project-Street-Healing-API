@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Text;
 
-namespace Street.Healing.API.Services
+namespace Street.Healing.Business.Tech.Tech.Services
 {
     public class PasswordServices : IPasswordServices
     {
