@@ -1,12 +1,11 @@
 ﻿using MimeKit;
 using MailKit.Net.Smtp;
-using Street.Healing.API.Helpers;
 using System.Security.Cryptography;
 using System.Text;
-using Street.Healing.API.Controllers;
 using Microsoft.Extensions.Logging;
+using Street.Healing.Business.Tech.Helpers;
 
-namespace Street.Healing.API.Services
+namespace Street.Healing.Business.Tech.Tech.Services
 {
     public class EmailServices : IEmailServices
     {

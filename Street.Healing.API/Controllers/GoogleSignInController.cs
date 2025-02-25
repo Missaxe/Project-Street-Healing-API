@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Street.Healing.API.Helpers;
-using Street.Healing.API.RequestsDto.GoogleSignIn;
-using Street.Healing.API.Services;
 using Street.Healing.Business.Core.Core.Repository;
+using Street.Healing.Business.Tech.Helpers;
+using Street.Healing.Business.Tech.Tech.Services;
 using Street.Healing.DAO.Repository;
 using Street.Healing.DTO.ModelsDTO;
 using Twilio.Jwt.AccessToken;

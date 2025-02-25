@@ -1,7 +1,7 @@
 ﻿using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 
-namespace Street.Healing.API.Services
+namespace Street.Healing.Business.Tech.Tech.Services
 {
     public class SmsServices : ISmsServices
     {

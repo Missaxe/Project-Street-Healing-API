@@ -1,7 +1,7 @@
-﻿using Street.Healing.API.Helpers;
+﻿using Street.Healing.Business.Tech.Helpers;
 using System.Threading.Tasks;
 
-namespace Street.Healing.API.Services
+namespace Street.Healing.Business.Tech.Tech.Services
 {
     public interface IEmailServices
     {

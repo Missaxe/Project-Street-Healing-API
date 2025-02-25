@@ -1,6 +1,6 @@
 ﻿using MimeKit;
 
-namespace Street.Healing.API.Helpers
+namespace Street.Healing.Business.Tech.Helpers
 {
     public class Message
     {

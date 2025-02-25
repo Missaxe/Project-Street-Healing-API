@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Street.Healing.API.Helpers;
-using Street.Healing.API.Services;
-using Street.Healing.API.MailStyling;
 using Street.Healing.DAO.Repository;
 using Street.Healing.Business.Core.Core.Services;
+using Street.Healing.Business.Tech.Helpers;
+using Street.Healing.Business.Tech.MailStyling;
+using Street.Healing.Business.Tech.Tech.Services;
 
 namespace Street.Healing.API.Controllers
 {

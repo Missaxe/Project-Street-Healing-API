@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography;
 
-namespace Street.Healing.API.Helpers
+namespace Street.Healing.Business.Tech.Helpers
 {
     public static class PasswordHash
     {

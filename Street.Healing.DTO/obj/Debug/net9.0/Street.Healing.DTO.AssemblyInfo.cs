@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Street.Healing.DTO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8b740286b8d461868287664b84fa9e7f65d25f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21165ea4bdcc3b72848f88934e61c2e152f46717")]
 [assembly: System.Reflection.AssemblyProductAttribute("Street.Healing.DTO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Street.Healing.DTO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

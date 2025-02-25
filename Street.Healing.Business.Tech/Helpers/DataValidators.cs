@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Street.Healing.API.Helpers
+namespace Street.Healing.Business.Tech.Helpers
 {
     public class DataValidators
     {
