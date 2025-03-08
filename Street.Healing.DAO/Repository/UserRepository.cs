@@ -21,6 +21,11 @@ namespace Street.Healing.DAO.Repository
             _userContext = userContext;
         }
 
+        public UserDbContext GetDbContext()
+        {
+            return _userContext; // Expose DbContext for testing purposes
+        }
+
         /// <summary>
         /// Adding and Saving Users into databse
         /// </summary>
@@ -31,6 +36,15 @@ namespace Street.Healing.DAO.Repository
             await _userContext.AddAsync(userObj);
             await _userContext.SaveChangesAsync();
         }
+
+        /// <summary>
+        /// Gett All Users
+        /// </summary>
+        /// <returns></returns>
+        public List<User> GetAllUsersAsync()
+        
+            =>  _userContext.Users.ToList();
+        
 
         /// <summary>
         /// Get matching user from db
@@ -67,7 +81,7 @@ namespace Street.Healing.DAO.Repository
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>
-        public async Task<bool> CheckUsernameExistAsync(string firstName, string lastName)
+        public async Task<bool> CheckUsernameExistAsync(string firstName)
             => await _userContext.Users.AnyAsync(x => x.FirstName == firstName);
     }
 }

@@ -22,14 +22,19 @@ namespace Street.Healing.Business.Core.Core.Services
             return _userRepository.CheckEmailExistAsync(email) ;
         }
 
-        public Task<bool> CheckIfUsernameExistAsync(string firstName, string lastName)
+        public Task<bool> CheckIfUsernameExistAsync(string firstName)
         {
-            return _userRepository.CheckUsernameExistAsync(firstName,lastName);
+            return _userRepository.CheckUsernameExistAsync(firstName);
         }
 
         public Task<User> GetUserAsync(string userEmail)
         {
             return _userRepository.GetUserAsync(userEmail);
+        }
+
+        public List<User> GetAllUsersAsync()
+        {
+            return _userRepository.GetAllUsersAsync();
         }
 
         public Task<string> GetUserEmailbyIdAsync(int id)

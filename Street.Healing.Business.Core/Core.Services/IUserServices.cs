@@ -12,10 +12,11 @@ namespace Street.Healing.Business.Core.Core.Services
         public Task AddUserAsync(User userObj);
 
         public Task<User> GetUserAsync(string userEmail);
+        public  List<User> GetAllUsersAsync();
 
         public Task<bool> CheckIfEmailExistAsync(string email);
 
-        public Task<bool> CheckIfUsernameExistAsync(string firstName, string lastName);
+        public Task<bool> CheckIfUsernameExistAsync(string firstName);
 
         public Task<string> GetUserEmailbyIdAsync(int id);
     }

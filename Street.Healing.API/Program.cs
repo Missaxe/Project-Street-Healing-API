@@ -107,9 +107,9 @@ namespace Street.Healing.API
 
             //Using API key middleware to validate key from client request 
 
-            app.UseMiddleware<RateLimitingMiddleware>();
+            //app.UseMiddleware<RateLimitingMiddleware>();
 
-            app.UseMiddleware<JWTTokenMiddleware>();
+            //app.UseMiddleware<JWTTokenMiddleware>();
 
             app.MapControllers();
 

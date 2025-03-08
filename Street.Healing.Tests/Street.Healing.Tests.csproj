@@ -1,24 +1,36 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="coverlet.collector" Version="6.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
     <PackageReference Include="Moq.EntityFrameworkCore" Version="9.0.0.1" />
-    <PackageReference Include="MSTest" Version="3.6.4" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Street.Healing.DAO\Street.Healing.DAO.csproj" />
+    <Reference Include="Street.Healing.Business.Core">
+      <HintPath>..\Street.Healing.Business.Core\bin\Debug\net9.0\Street.Healing.Business.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Street.Healing.DAO">
+      <HintPath>..\Street.Healing.DAO\bin\Debug\net9.0\Street.Healing.DAO.dll</HintPath>
+    </Reference>
+    <Reference Include="Street.Healing.DTO">
+      <HintPath>..\Street.Healing.DTO\bin\Debug\net9.0\Street.Healing.DTO.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+    <Using Include="Xunit" />
   </ItemGroup>
 
 </Project>

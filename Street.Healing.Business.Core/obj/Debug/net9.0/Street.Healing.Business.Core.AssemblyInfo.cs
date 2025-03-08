@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Street.Healing.Business.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2082835decf67f129c752bf8b0a5d81c129a54f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dbf17119c546bb4c3f84f64ad79c3ff5756c33c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Street.Healing.Business.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Street.Healing.Business.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

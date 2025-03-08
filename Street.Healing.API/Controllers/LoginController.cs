@@ -28,6 +28,7 @@ namespace Street.Healing.API.Controllers
             {
                 if (userObj == null)
                     return BadRequest();
+                var users =  _userServices.GetAllUsersAsync();
 
                 var user = await _userServices.GetUserAsync(userObj.Email);
 
