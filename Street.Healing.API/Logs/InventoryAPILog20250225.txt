@@ -29,3 +29,9 @@
 2025-02-25 11:09:21.490 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
 2025-02-25 11:09:21.605 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/favicon-32x32.png - 200 628 image/png 122.1563ms
 2025-02-25 11:09:21.791 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 350.4118ms
+2025-02-25 15:20:54.146 +01:00 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-25 15:20:54.685 +01:00 [INF] Now listening on: https://localhost:7066
+2025-02-25 15:20:54.688 +01:00 [INF] Now listening on: http://localhost:5050
+2025-02-25 15:20:54.789 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-25 15:20:54.791 +01:00 [INF] Hosting environment: Development
+2025-02-25 15:20:54.793 +01:00 [INF] Content root path: C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API

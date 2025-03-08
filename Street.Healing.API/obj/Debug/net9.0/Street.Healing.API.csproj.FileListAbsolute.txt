@@ -376,3 +376,4 @@ C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.pdb
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.genruntimeconfig.cache
 C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\ref\Street.Healing.API.dll
+C:\Users\hp\source\repos\Project-Street-Healing-API\Street.Healing.API\obj\Debug\net9.0\Street.Healing.API.MvcApplicationPartsAssemblyInfo.cs
